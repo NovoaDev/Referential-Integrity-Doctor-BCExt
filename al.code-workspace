@@ -5,6 +5,9 @@
     },
     {
       "path": "Referential-Integrity-Doctor"
+    },
+    {
+      "path": "Referential-Integrity-Doctor.Test"
     }
   ],
   "settings": {}
