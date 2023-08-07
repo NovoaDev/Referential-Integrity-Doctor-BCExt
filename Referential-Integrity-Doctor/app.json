@@ -3,13 +3,14 @@
   "name": "Referential-Integrity-Doctor",
   "publisher": "ANJ",
   "version": "1.0.0.0",
-  "brief": "",
-  "description": "",
-  "privacyStatement": "",
-  "EULA": "",
-  "help": "",
-  "url": "",
-  "logo": "",
+  "brief": "App to handle referential integrity problems",
+  "description": "App to handle referential integrity problems",
+  "privacyStatement": "https://github.com/NovoaDev/Referential-Integrity-Doctor-BCExt",
+  "EULA": "https://github.com/NovoaDev/Referential-Integrity-Doctor-BCExt",
+  "help": "https://github.com/NovoaDev/Referential-Integrity-Doctor-BCExt",
+  "url": "https://github.com/NovoaDev/Referential-Integrity-Doctor-BCExt",
+  "logo": "res/logo.png",
+  "contextSensitiveHelpUrl": "https://github.com/NovoaDev/Referential-Integrity-Doctor-BCExt",
   "dependencies": [],
   "screenshots": [],
   "platform": "1.0.0.0",
@@ -21,11 +22,13 @@
     }
   ],
   "features": [
-    "NoImplicitWith"
+    "NoImplicitWith",
+    "TranslationFile"
   ],
   "resourceExposurePolicy": {
     "allowDebugging": true,
     "allowDownloadingSource": false,
     "includeSourceInSymbolFile": false
-  }
+  },
+  "runtime": "11.0"
 }

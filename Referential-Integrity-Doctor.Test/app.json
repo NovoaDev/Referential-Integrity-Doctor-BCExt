@@ -3,13 +3,14 @@
   "name": "Referential-Integrity-Doctor.Test",
   "publisher": "ANJ",
   "version": "1.0.0.0",
-  "brief": "",
-  "description": "",
-  "privacyStatement": "",
-  "EULA": "",
-  "help": "",
-  "url": "",
-  "logo": "",
+  "brief": "App to test handle Referential-Integrity-Doctor App",
+  "description": "App to test handle Referential-Integrity-Doctor App",
+  "privacyStatement": "https://github.com/NovoaDev/Referential-Integrity-Doctor-BCExt",
+  "EULA": "https://github.com/NovoaDev/Referential-Integrity-Doctor-BCExt",
+  "help": "https://github.com/NovoaDev/Referential-Integrity-Doctor-BCExt",
+  "url": "https://github.com/NovoaDev/Referential-Integrity-Doctor-BCExt",
+  "logo": "res/logo.png",
+  "contextSensitiveHelpUrl": "https://github.com/NovoaDev/Referential-Integrity-Doctor-BCExt",
   "dependencies": [
     {
       "publisher": "Microsoft",
@@ -22,6 +23,18 @@
       "name": "Any",
       "id": "e7320ebb-08b3-4406-b1ec-b4927d3e280b",
       "version": "22.0.0.0"
+    },
+    {
+      "id": "5d86850b-0d76-4eca-bd7b-951ad998e997",
+      "publisher": "Microsoft",
+      "name": "Tests-TestLibraries",
+      "version": "22.0.0.0"
+    },
+    {
+      "id": "af89123d-590a-447b-b76f-d50bc1d4ed78",
+      "name": "Referential-Integrity-Doctor",
+      "publisher": "ANJ",
+      "version": "1.0.0.0"
     }
   ],
   "screenshots": [],
@@ -40,5 +53,6 @@
     "allowDebugging": true,
     "allowDownloadingSource": false,
     "includeSourceInSymbolFile": false
-  }
+  },
+  "runtime": "11.0"
 }
