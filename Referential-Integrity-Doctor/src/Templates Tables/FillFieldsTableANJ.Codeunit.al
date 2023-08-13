@@ -1,5 +1,5 @@
 /// <summary>
-/// Codeunit "FillFieldsTable_ANJ" (ID 80700).
+/// Codeunit FillFieldsTable_ANJ (ID 80700).
 /// </summary>
 codeunit 80700 FillFieldsTable_ANJ
 {

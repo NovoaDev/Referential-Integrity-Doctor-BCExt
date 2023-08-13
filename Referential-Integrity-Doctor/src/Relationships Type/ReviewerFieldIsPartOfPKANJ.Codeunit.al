@@ -1,5 +1,5 @@
 /// <summary>
-/// Codeunit "ReviewerFieldIsPartOfPK_ANJ" (ID 80702).
+/// Codeunit ReviewerFieldIsPartOfPK_ANJ (ID 80702).
 /// </summary>
 codeunit 80702 ReviewerFieldIsPartOfPK_ANJ
 {
@@ -21,7 +21,7 @@ codeunit 80702 ReviewerFieldIsPartOfPK_ANJ
     end;
 
     /// <summary>
-    /// OnBeforeCheck.
+    /// DoCheck.
     /// </summary>
     /// <param name="TableNo">VAR Integer.</param>
     /// <param name="FieldNo">Integer.</param>

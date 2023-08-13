@@ -16,6 +16,8 @@ page 80703 TablesToClean_ANJ
         {
             repeater(General)
             {
+                Caption = 'General';
+
                 field(TableNo; Rec.TableNo)
                 {
                     ToolTip = 'Specifies the value of the Table No. field.';

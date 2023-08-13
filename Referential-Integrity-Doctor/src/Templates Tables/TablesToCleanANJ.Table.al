@@ -43,6 +43,14 @@ table 80702 TablesToClean_ANJ
             Caption = 'Analyze';
             InitValue = true;
         }
+        field(6; HasRelationshipLines; Boolean)
+        {
+            CalcFormula = exist(FieldsToAnalyze_ANJ where(MedicalTests = field(MedicalTests), TableNo = field(TableNo)));
+            Caption = 'Has Relationship Lines';
+            Description = 'Control field';
+            Editable = false;
+            FieldClass = FlowField;
+        }
     }
     keys
     {
