@@ -53,6 +53,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table FieldsToAnalyze_ANJ - Field TableNo - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 2668976440 - Field 1901247322 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Test Table Relation</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table FieldsToAnalyze_ANJ - Field TestTableRelation - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2668976440 - Field 90345058 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Validate Table Relation</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table FieldsToAnalyze_ANJ - Field ValidateTableRelation - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 3812864656 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Medical Tests</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -172,6 +182,16 @@
           <source>Specifies the value of the Relation Table No. field.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page FieldsToAnalyze_ANJ - Control RelationTableNo - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2668976440 - Control 1901247322 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Test Table Relation field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page FieldsToAnalyze_ANJ - Control TestTableRelation - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2668976440 - Control 90345058 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Validate Table Relation field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page FieldsToAnalyze_ANJ - Control ValidateTableRelation - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 391886792 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Add Table Id By Range</source>

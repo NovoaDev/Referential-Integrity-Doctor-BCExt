@@ -84,6 +84,20 @@ table 80703 FieldsToAnalyze_ANJ
             Caption = 'Analyze';
             InitValue = true;
         }
+        field(10; TestTableRelation; Boolean)
+        {
+            CalcFormula = exist("Table Relations Metadata" where("Table ID" = field(TableNo), "Field No." = field(Fieldno), "Test Table Relation" = const(true)));
+            Caption = 'Test Table Relation';
+            Editable = false;
+            FieldClass = FlowField;
+        }
+        field(11; ValidateTableRelation; Boolean)
+        {
+            CalcFormula = exist("Table Relations Metadata" where("Table ID" = field(TableNo), "Field No." = field(Fieldno), "Validate Table Relation" = const(true)));
+            Caption = 'Validate Table Relation';
+            Editable = false;
+            FieldClass = FlowField;
+        }
     }
     keys
     {
