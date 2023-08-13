@@ -1,7 +1,7 @@
 /// <summary>
-/// Codeunit OnlyForeignKeysImp_ANJ (ID 80701) implements Interface RelationshipsType_ANJ.
+/// Codeunit ForeignKeysImp_ANJ (ID 80701) implements Interface RelationshipsType_ANJ.
 /// </summary>
-codeunit 80701 OnlyForeignKeysImp_ANJ implements RelationshipsType_ANJ
+codeunit 80701 ForeignKeysImp_ANJ implements RelationshipsType_ANJ
 {
     Access = Internal;
 

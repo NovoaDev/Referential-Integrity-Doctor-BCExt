@@ -59,9 +59,9 @@ table 80700 TheRIDoctor_ANJ
         if HasBeenRead then
             exit;
 
-        if not Rec.Get() then begin
-            Rec.Init();
-            Rec.Insert(true);
+        if not Get() then begin
+            Init();
+            Insert(true);
         end;
         HasBeenRead := true;
     end;

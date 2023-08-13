@@ -37,4 +37,38 @@ page 80701 MedicalTest_ANJ
             }
         }
     }
+    actions
+    {
+        area(processing)
+        {
+            action(FillIdByRange)
+            {
+                ApplicationArea = All;
+                Caption = 'Add Tables Id By Range';
+                Image = Table;
+                ToolTip = 'Executes the Add Tables Id By Range action.';
+
+                trigger OnAction()
+                begin
+                    Rec.GenerateTables(Enum::TableRangeAllocator_ANJ::PerRange);
+                end;
+            }
+        }
+        area(Promoted)
+        {
+            group(Category_Process)
+            {
+                Caption = 'Process';
+
+                group(Category_Category4)
+                {
+                    Caption = 'Generate Tables';
+
+                    actionref(FillIdByRange_Promoted; FillIdByRange)
+                    {
+                    }
+                }
+            }
+        }
+    }
 }

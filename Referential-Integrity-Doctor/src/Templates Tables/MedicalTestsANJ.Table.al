@@ -37,4 +37,27 @@ table 80701 MedicalTests_ANJ
         {
         }
     }
+
+    /// <summary>
+    /// GenerateTablesByRange.
+    /// </summary>
+    /// <param name="TableRangeAllocator">Enum TableRangeAllocator_ANJ.</param>
+    internal procedure GenerateTables(TableRangeAllocator: Enum TableRangeAllocator_ANJ)
+    var
+        RemoveFromListTablesWithoutFieldsWithRelations: Boolean;
+        EndTableId: Integer;
+        InitTableId: Integer;
+        ITableRangeAllocator: Interface TableRangeAllocator_ANJ;
+    begin
+        ITableRangeAllocator := TableRangeAllocator;
+        ITableRangeAllocator.GetInfoToGenerateData(InitTableId, EndTableId, RemoveFromListTablesWithoutFieldsWithRelations);
+
+        InfoTableGenerator.Generate(Rec.No, InitTableId, EndTableId, false);
+        if RemoveFromListTablesWithoutFieldsWithRelations then
+            InfoTableCleaner.CleanTablesWitoutRelations();
+    end;
+
+    var
+        InfoTableCleaner: Codeunit InfoTableCleaner_ANJ;
+        InfoTableGenerator: Codeunit InfoTableGenerator_ANJ;
 }
