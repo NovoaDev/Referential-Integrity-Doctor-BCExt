@@ -23,5 +23,10 @@ permissionset 80700 RIDoctor_ANJ
         codeunit InfoTableGenerator_ANJ = X,
         codeunit PerRangeImplementation_ANJ = X,
         page FillIdByRange_ANJ = X,
-        page ShowTableList_ANJ = X;
+        page ShowTableList_ANJ = X,
+        tabledata TableFilters_ANJ = RIMD,
+        table TableFilters_ANJ = X,
+        codeunit TotalRecordCalculator_ANJ = X,
+        page TableFilters_ANJ = X,
+        codeunit FilterApplicator_ANJ = X;
 }

@@ -13,12 +13,12 @@ table 80703 FieldsToAnalyze_ANJ
         {
             Caption = 'Medical Tests';
             NotBlank = true;
-            TableRelation = MedicalTests_ANJ.No;
+            TableRelation = MedicalTests_ANJ;
         }
         field(2; TableNo; Integer)
         {
             Caption = 'Table No.';
-            Tablerelation = "Table Metadata".ID;
+            Tablerelation = "Table Metadata";
 
             trigger OnValidate()
             begin
@@ -46,7 +46,7 @@ table 80703 FieldsToAnalyze_ANJ
         field(5; RelationTableNo; Integer)
         {
             Caption = 'Relation Table No.';
-            Tablerelation = "Table Metadata".ID;
+            Tablerelation = "Table Metadata";
 
             trigger OnValidate()
             begin

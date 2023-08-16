@@ -13,12 +13,12 @@ table 80702 TablesToClean_ANJ
         {
             Caption = 'Medical Tests';
             NotBlank = true;
-            TableRelation = MedicalTests_ANJ.No;
+            TableRelation = MedicalTests_ANJ;
         }
         field(2; TableNo; Integer)
         {
             Caption = 'Table No.';
-            Tablerelation = "Table Metadata".ID;
+            Tablerelation = "Table Metadata";
 
             trigger OnValidate()
             begin
@@ -51,6 +51,17 @@ table 80702 TablesToClean_ANJ
             Editable = false;
             FieldClass = FlowField;
         }
+        field(7; TotalOfRecords; Integer)
+        {
+            Caption = 'Total Of Records';
+        }
+        field(8; TableFilters; Integer)
+        {
+            CalcFormula = count(TableFilters_ANJ where(MedicalTests = field(MedicalTests), TableNo = field(TableNo)));
+            Caption = 'Table Filters';
+            Editable = false;
+            FieldClass = FlowField;
+        }
     }
     keys
     {
@@ -68,6 +79,16 @@ table 80702 TablesToClean_ANJ
         {
         }
     }
+
+    trigger OnInsert()
+    begin
+        UpdateTotals();
+    end;
+
+    trigger OnModify()
+    begin
+        UpdateTotals();
+    end;
 
     trigger OnDelete()
     begin
@@ -95,5 +116,15 @@ table 80702 TablesToClean_ANJ
         FillFieldsTable: Codeunit FillFieldsTable_ANJ;
     begin
         FillFieldsTable.GenerateData(MedicalTests, TableNo, RelationshipsType);
+    end;
+
+    /// <summary>
+    /// UpdateTotals.
+    /// </summary>
+    internal procedure UpdateTotals()
+    var
+        TotalRecordCalculator: Codeunit TotalRecordCalculator_ANJ;
+    begin
+        TotalRecordCalculator.Calculate(Rec, true);
     end;
 }

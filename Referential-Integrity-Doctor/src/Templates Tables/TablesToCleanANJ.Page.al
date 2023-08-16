@@ -30,6 +30,15 @@ page 80703 TablesToClean_ANJ
                 {
                     ToolTip = 'Specifies the value of the Relationships Type field.';
                 }
+                field(TableFilters; Rec.TableFilters)
+                {
+                    ToolTip = 'Specifies the value of the Table Filters field.';
+                }
+                field(TotalOfRecords; Rec.TotalOfRecords)
+                {
+                    Editable = false;
+                    ToolTip = 'Specifies the value of the Total Of Records field.';
+                }
                 field(Analyze; Rec.Analyze)
                 {
                     ToolTip = 'Specifies the value of the Analyze field.';
@@ -37,4 +46,9 @@ page 80703 TablesToClean_ANJ
             }
         }
     }
+    trigger OnAfterGetCurrRecord()
+    begin
+        Rec.UpdateTotals();
+        Rec.CalcFields(TableFilters);
+    end;
 }
