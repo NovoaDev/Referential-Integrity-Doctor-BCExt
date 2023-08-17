@@ -38,6 +38,15 @@ table 80701 MedicalTests_ANJ
         }
     }
 
+    trigger OnDelete()
+    var
+        TablesToClean: Record TablesToClean_ANJ;
+    begin
+        TablesToClean.SetRange(MedicalTests, Rec.No);
+        if not TablesToClean.IsEmpty() then
+            TablesToClean.DeleteAll();
+    end;
+
     /// <summary>
     /// GenerateTablesByRange.
     /// </summary>

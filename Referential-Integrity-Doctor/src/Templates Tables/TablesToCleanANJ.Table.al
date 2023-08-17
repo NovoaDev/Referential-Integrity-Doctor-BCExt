@@ -101,11 +101,17 @@ table 80702 TablesToClean_ANJ
     local procedure CleanRelatedFields()
     var
         FieldsToAnalyze: Record FieldsToAnalyze_ANJ;
+        TableFiltersANJ: Record TableFilters_ANJ;
     begin
         FieldsToAnalyze.SetRange(MedicalTests, MedicalTests);
         FieldsToAnalyze.SetRange(TableNo, TableNo);
         if not FieldsToAnalyze.IsEmpty() then
             FieldsToAnalyze.DeleteAll(true);
+
+        TableFiltersANJ.SetRange(MedicalTests, MedicalTests);
+        TableFiltersANJ.SetRange(TableNo, TableNo);
+        if not TableFiltersANJ.IsEmpty() then
+            TableFiltersANJ.DeleteAll(true);
     end;
 
     /// <summary>
