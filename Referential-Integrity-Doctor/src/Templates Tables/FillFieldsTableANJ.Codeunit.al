@@ -50,7 +50,7 @@ codeunit 80700 FillFieldsTable_ANJ
             repeat
                 FamilyTree.GetRelationship(AuxField, RelationTableNo, RelationFieldNo, FiltersToApply);
                 if IRelationshipsType.CheckRulesBeforeInsertFieldLine(TableNo, AuxField."No.", AuxField.RelationTableNo, RelationFieldNo) then
-                    InsertFieldLine(MedicalTests, TableNo, AuxField."No.", AuxField.RelationTableNo, RelationFieldNo);
+                    InsertFieldLine(MedicalTests, TableNo, AuxField."No.", AuxField.RelationTableNo, RelationFieldNo, FiltersToApply);
             until AuxField.Next() = 0;
     end;
 
@@ -62,12 +62,14 @@ codeunit 80700 FillFieldsTable_ANJ
     /// <param name="FieldNo">Integer.</param>
     /// <param name="RelationTableNo">Integer.</param>
     /// <param name="RelationFieldNo">Integer.</param>
-    local procedure InsertFieldLine(MedicalTests: Code[20]; TableNo: Integer; FieldNo: Integer; RelationTableNo: Integer; RelationFieldNo: Integer);
+    /// <param name="FiltersToApply">Text.</param>
+    local procedure InsertFieldLine(MedicalTests: Code[20]; TableNo: Integer; FieldNo: Integer; RelationTableNo: Integer; RelationFieldNo: Integer; FiltersToApply: Text);
     var
         FieldsToAnalyze: Record FieldsToAnalyze_ANJ;
         IsHandled: Boolean;
     begin
-        OnBeforeInsertFieldLine(MedicalTests, TableNo, FieldNo, RelationTableNo, RelationFieldNo, IsHandled);
+        Clear(FiltersToApply); //TODO: No filters to apply
+        OnBeforeInsertFieldLine(MedicalTests, TableNo, FieldNo, RelationTableNo, RelationFieldNo, FiltersToApply, IsHandled);
         if IsHandled then
             exit;
 
@@ -80,16 +82,16 @@ codeunit 80700 FillFieldsTable_ANJ
         FieldsToAnalyze.Validate(RelationFieldNo, RelationFieldNo);
         FieldsToAnalyze.Modify(true);
 
-        OnAfterInsertFieldLine(MedicalTests, TableNo, FieldNo, RelationTableNo, RelationFieldNo);
+        OnAfterInsertFieldLine(MedicalTests, TableNo, FieldNo, RelationTableNo, RelationFieldNo, FiltersToApply);
     end;
 
     [IntegrationEvent(false, false)]
-    local procedure OnBeforeInsertFieldLine(MedicalTests: Code[20]; TableNo: Integer; FieldNo: Integer; RelationTableNo: Integer; RelationFieldNo: Integer; var IsHandled: Boolean);
+    local procedure OnBeforeInsertFieldLine(MedicalTests: Code[20]; TableNo: Integer; FieldNo: Integer; RelationTableNo: Integer; RelationFieldNo: Integer; var FiltersToApply: Text; var IsHandled: Boolean);
     begin
     end;
 
     [IntegrationEvent(false, false)]
-    local procedure OnAfterInsertFieldLine(MedicalTests: Code[20]; TableNo: Integer; FieldNo: Integer; RelationTableNo: Integer; RelationFieldNo: Integer);
+    local procedure OnAfterInsertFieldLine(MedicalTests: Code[20]; TableNo: Integer; FieldNo: Integer; RelationTableNo: Integer; RelationFieldNo: Integer; FiltersToApply: Text);
     begin
     end;
 
