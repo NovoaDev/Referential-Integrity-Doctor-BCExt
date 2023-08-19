@@ -31,7 +31,9 @@ codeunit 80700 FillFieldsTable_ANJ
     var
         AuxField: Record Field;
         RelationFieldNo: Integer;
+        RelationTableNo: Integer;
         IRelationshipsType: Interface RelationshipsType_ANJ;
+        FiltersToApply: Text;
     begin
         if IsHandled then
             exit;
@@ -46,7 +48,7 @@ codeunit 80700 FillFieldsTable_ANJ
         AuxField.SetFilter(RelationTableNo, '>%1', 0);
         if AuxField.FindSet(false) then
             repeat
-                RelationFieldNo := FieldCheckerRealTR.CheckAndGetNewFieldID(AuxField.RelationTableNo, AuxField.RelationFieldNo);
+                FamilyTree.GetRelationship(AuxField, RelationTableNo, RelationFieldNo, FiltersToApply);
                 if IRelationshipsType.CheckRulesBeforeInsertFieldLine(TableNo, AuxField."No.", AuxField.RelationTableNo, RelationFieldNo) then
                     InsertFieldLine(MedicalTests, TableNo, AuxField."No.", AuxField.RelationTableNo, RelationFieldNo);
             until AuxField.Next() = 0;
@@ -102,5 +104,5 @@ codeunit 80700 FillFieldsTable_ANJ
     end;
 
     var
-        FieldCheckerRealTR: Codeunit FieldCheckerRealTR_ANJ;
+        FamilyTree: Codeunit FamilyTree_ANJ;
 }

@@ -16,7 +16,7 @@ permissionset 80700 RIDoctor_ANJ
         page MedicalTest_ANJ = X,
         page TablesToClean_ANJ = X,
         page TheRIDoctor_ANJ = X,
-        codeunit FieldCheckerRealTR_ANJ = X,
+        codeunit FamilyTree_ANJ = X,
         codeunit ForeignKeysImp_ANJ = X,
         codeunit ReviewerFieldIsPartOfPK_ANJ = X,
         codeunit InfoTableCleaner_ANJ = X,
