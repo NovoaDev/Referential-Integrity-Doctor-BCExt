@@ -6,6 +6,8 @@ table 80702 TablesToClean_ANJ
     Access = Internal;
     Caption = 'Tables To Clean';
     DataClassification = CustomerContent;
+    DrillDownPageId = TablesToClean_ANJ;
+    LookupPageId = TablesToClean_ANJ;
 
     fields
     {
@@ -23,8 +25,6 @@ table 80702 TablesToClean_ANJ
             trigger OnValidate()
             begin
                 Rec.CalcFields(TableName);
-                CleanRelatedFields();
-                FillRelatedFieldsTable();
             end;
         }
         field(3; TableName; Text[30])
@@ -80,16 +80,6 @@ table 80702 TablesToClean_ANJ
         }
     }
 
-    trigger OnInsert()
-    begin
-        UpdateTotals();
-    end;
-
-    trigger OnModify()
-    begin
-        UpdateTotals();
-    end;
-
     trigger OnDelete()
     begin
         CleanRelatedFields();
@@ -122,6 +112,17 @@ table 80702 TablesToClean_ANJ
         FillFieldsTable: Codeunit FillFieldsTable_ANJ;
     begin
         FillFieldsTable.GenerateData(MedicalTests, TableNo, RelationshipsType);
+    end;
+
+    /// <summary>
+    /// RecalculeLines.
+    /// </summary>
+    internal procedure RecalculeLines()
+    begin
+        UpdateTotals();
+        CleanRelatedFields();
+        if (TableNo <> 0) and (Rec.TableNo <> xRec.TableNo) then
+            FillRelatedFieldsTable();
     end;
 
     /// <summary>

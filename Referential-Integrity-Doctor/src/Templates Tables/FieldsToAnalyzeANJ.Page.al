@@ -53,6 +53,10 @@ page 80704 FieldsToAnalyze_ANJ
                 {
                     ToolTip = 'Specifies the value of the Validate Table Relation field.';
                 }
+                field(TableRelation; Rec.TableRelation)
+                {
+                    ToolTip = 'Specifies the value of the Table Relation field.';
+                }
                 field(Analyze; Rec.Analyze)
                 {
                     ToolTip = 'Specifies the value of the Analyze field.';

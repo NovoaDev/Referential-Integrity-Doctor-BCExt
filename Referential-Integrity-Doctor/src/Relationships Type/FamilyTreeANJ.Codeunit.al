@@ -12,7 +12,7 @@ codeunit 80703 FamilyTree_ANJ
     /// <param name="RelationTableNo">VAR Integer.</param>
     /// <param name="RelationFieldNo">VAR Integer.</param>
     /// <param name="FiltersToApply">VAR Dictionary of [Integer, Text].</param>
-    internal procedure GetRelationship(var AuxField: Record Field; var RelationTableNo: Integer; var RelationFieldNo: Integer; FiltersToApply: Text)
+    internal procedure GetRelationship(var AuxField: Record Field; var RelationTableNo: Integer; var RelationFieldNo: Integer; var FiltersToApply: Dictionary of [Integer, Text[250]])
     var
         IsHandled: Boolean;
     begin
@@ -29,7 +29,7 @@ codeunit 80703 FamilyTree_ANJ
     /// <param name="RelationFieldNo">VAR Integer.</param>
     /// <param name="FiltersToApply">VAR Dictionary of [Integer, Text].</param>
     /// <param name="IsHandled">Boolean.</param>
-    local procedure DoGetRelationship(var AuxField: Record Field; var RelationTableNo: Integer; var RelationFieldNo: Integer; var FiltersToApply: Text; IsHandled: Boolean)
+    local procedure DoGetRelationship(var AuxField: Record Field; var RelationTableNo: Integer; var RelationFieldNo: Integer; var FiltersToApply: Dictionary of [Integer, Text[250]]; IsHandled: Boolean)
     var
         FieldList: List of [Integer];
     begin
@@ -43,24 +43,23 @@ codeunit 80703 FamilyTree_ANJ
     end;
 
     /// <summary>
-    /// GetCompositeRelationship.
+    /// GetRelationship.
     /// </summary>
+    /// <param name="AuxField">VAR Record Field.</param>
     /// <param name="RelationFieldNo">VAR Integer.</param>
     /// <param name="FiltersToApply">VAR Text.</param>
     /// <param name="FieldList">List of [Integer].</param>
-    local procedure GetRelationship(var AuxField: Record Field; var RelationFieldNo: Integer; var FiltersToApply: Text; FieldList: List of [Integer])
+    local procedure GetRelationship(var AuxField: Record Field; var RelationFieldNo: Integer; var FiltersToApply: Dictionary of [Integer, Text[250]]; FieldList: List of [Integer])
     begin
         Clear(RelationFieldNo);
         Clear(FiltersToApply);
 
         if FieldList.Count() = 1 then begin
             RelationFieldNo := FieldList.Get(1);
+            FiltersToApply.Add(AuxField."No.", StrSubstNo(FieldLbl, RelationFieldNo));
             exit;
         end;
 
-        /// message to skip cop error.
-        if AuxField."No." = 9999 then
-            Message('AuxField.FieldNo = 1');
         // TODO: Missing composite relationship data
     end;
 
@@ -87,12 +86,15 @@ codeunit 80703 FamilyTree_ANJ
     end;
 
     [IntegrationEvent(false, false)]
-    local procedure OnBeforeGetRelationship(AuxField: Record Field; var RelationTableNo: Integer; var RelationFieldNo: Integer; FiltersToApply: Text; var IsHandled: Boolean);
+    local procedure OnBeforeGetRelationship(AuxField: Record Field; var RelationTableNo: Integer; var RelationFieldNo: Integer; var FiltersToApply: Dictionary of [Integer, Text[250]]; var IsHandled: Boolean);
     begin
     end;
 
     [IntegrationEvent(false, false)]
-    local procedure OnAfterGetRelationship(AuxField: Record Field; var RelationTableNo: Integer; var RelationFieldNo: Integer; FiltersToApply: Text);
+    local procedure OnAfterGetRelationship(AuxField: Record Field; var RelationTableNo: Integer; var RelationFieldNo: Integer; FiltersToApply: Dictionary of [Integer, Text[250]]);
     begin
     end;
+
+    var
+        FieldLbl: Label 'Field:%1';
 }

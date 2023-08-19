@@ -15,12 +15,12 @@ table 80704 TableFilters_ANJ
         {
             Caption = 'Medical Tests';
             NotBlank = true;
-            TableRelation = MedicalTests_ANJ;
+            TableRelation = TablesToClean_ANJ.MedicalTests;
         }
         field(2; TableNo; Integer)
         {
             Caption = 'Table No.';
-            Tablerelation = "Table Metadata";
+            TableRelation = TablesToClean_ANJ.TableNo where(TableNo = field(TableNo));
         }
         field(3; FieldNo; Integer)
         {
@@ -62,7 +62,6 @@ table 80704 TableFilters_ANJ
         fieldgroup(DropDown; MedicalTests, TableNo) { }
         fieldgroup(Brick; MedicalTests, TableNo) { }
     }
-
     /// <summary>
     /// UpdateFileType.
     /// </summary>
