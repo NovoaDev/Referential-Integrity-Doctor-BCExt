@@ -1,5 +1,5 @@
 /// <summary>
-/// Codeunit "FilterApplicator_ANJ" (ID 80708).
+/// Codeunit FilterApplicator_ANJ (ID 80708).
 /// </summary>
 codeunit 80708 FilterApplicator_ANJ
 {
@@ -9,35 +9,34 @@ codeunit 80708 FilterApplicator_ANJ
     /// ApplyFilter.
     /// </summary>
     /// <param name="AuxRecordRef">VAR RecordRef.</param>
-    internal procedure ApplyFilter(MedicalTests: Code[20]; TableNo: Integer; var AuxRecordRef: RecordRef)
+    internal procedure ApplyFilter(FiltersToApply: Dictionary of [Integer, Text[2048]]; var AuxRecordRef: RecordRef)
     var
         IsHandled: Boolean;
     begin
-        OnBeforeApplyFilter(MedicalTests, TableNo, AuxRecordRef, IsHandled);
-        DoApplyFilter(MedicalTests, TableNo, AuxRecordRef, IsHandled);
-        OnAfterApplyFilter(MedicalTests, TableNo, AuxRecordRef);
+        OnBeforeApplyFilter(FiltersToApply, AuxRecordRef, IsHandled);
+        DoApplyFilter(FiltersToApply, AuxRecordRef, IsHandled);
+        OnAfterApplyFilter(FiltersToApply, AuxRecordRef);
     end;
 
     /// <summary>
     /// DoApplyFilter.
     /// </summary>
-    /// <param name="MedicalTests">Code[20].</param>
-    /// <param name="TableNo">Integer.</param>
     /// <param name="AuxRecordRef">VAR RecordRef.</param>
     /// <param name="IsHandled">Boolean.</param>
-    local procedure DoApplyFilter(MedicalTests: Code[20]; TableNo: Integer; var AuxRecordRef: RecordRef; IsHandled: Boolean);
+    local procedure DoApplyFilter(FiltersToApply: Dictionary of [Integer, Text[2048]]; var AuxRecordRef: RecordRef; IsHandled: Boolean);
     var
-        TableFilters: Record TableFilters_ANJ;
+        FilterNo: Integer;
+        Filters: List of [Integer];
     begin
         if IsHandled then
             exit;
 
-        TableFilters.SetRange(MedicalTests, MedicalTests);
-        TableFilters.SetRange(TableNo, TableNo);
-        if TableFilters.FindSet(false) then
-            repeat
-                ApplyFilterToRecordRef(AuxRecordRef, TableFilters.FieldNo, TableFilters.FilterValue);
-            until TableFilters.Next() = 0;
+        if FiltersToApply.Count() = 0 then
+            exit;
+
+        Filters := FiltersToApply.Keys();
+        foreach FilterNo in Filters do
+            ApplyFilterToRecordRef(AuxRecordRef, FilterNo, FiltersToApply.Get(FilterNo));
     end;
 
     /// <summary>
@@ -55,12 +54,12 @@ codeunit 80708 FilterApplicator_ANJ
     end;
 
     [IntegrationEvent(false, false)]
-    local procedure OnBeforeApplyFilter(MedicalTests: Code[20]; TableNo: Integer; var AuxRecordRef: RecordRef; var IsHandled: Boolean);
+    local procedure OnBeforeApplyFilter(FiltersToApply: Dictionary of [Integer, Text[2048]]; var AuxRecordRef: RecordRef; var IsHandled: Boolean);
     begin
     end;
 
     [IntegrationEvent(false, false)]
-    local procedure OnAfterApplyFilter(MedicalTests: Code[20]; TableNo: Integer; var AuxRecordRef: RecordRef);
+    local procedure OnAfterApplyFilter(FiltersToApply: Dictionary of [Integer, Text[2048]]; var AuxRecordRef: RecordRef);
     begin
     end;
 }

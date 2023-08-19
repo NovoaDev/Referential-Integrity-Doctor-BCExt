@@ -28,5 +28,6 @@ permissionset 80700 RIDoctor_ANJ
         table TableFilters_ANJ = X,
         codeunit TotalRecordCalculator_ANJ = X,
         page TableFilters_ANJ = X,
-        codeunit FilterApplicator_ANJ = X;
+        codeunit FilterApplicator_ANJ = X,
+        codeunit FillDictFromTableFilters_ANJ = X;
 }

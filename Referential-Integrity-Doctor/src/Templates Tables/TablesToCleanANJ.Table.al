@@ -131,6 +131,6 @@ table 80702 TablesToClean_ANJ
     var
         TotalRecordCalculator: Codeunit TotalRecordCalculator_ANJ;
     begin
-        TotalRecordCalculator.Calculate(Rec, true);
+        TotalRecordCalculator.Calculate(Rec);
     end;
 }

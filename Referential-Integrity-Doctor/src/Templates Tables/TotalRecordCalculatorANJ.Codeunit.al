@@ -9,13 +9,12 @@ codeunit 80706 TotalRecordCalculator_ANJ
     /// Calculate.
     /// </summary>
     /// <param name="TablesToClean">VAR Record TablesToClean_ANJ.</param>
-    /// <param name="ApplyTableFilters">Boolean.</param>
-    internal procedure Calculate(var TablesToClean: Record TablesToClean_ANJ; ApplyTableFilters: Boolean);
+    internal procedure Calculate(var TablesToClean: Record TablesToClean_ANJ);
     var
         IsHandled: Boolean;
     begin
-        OnBeforeCalculate(TablesToClean, ApplyTableFilters, IsHandled);
-        DoCalculate(TablesToClean, ApplyTableFilters, IsHandled);
+        OnBeforeCalculate(TablesToClean, IsHandled);
+        DoCalculate(TablesToClean, IsHandled);
         OnAfterCalculate(TablesToClean);
     end;
 
@@ -23,11 +22,11 @@ codeunit 80706 TotalRecordCalculator_ANJ
     /// DoCalculate.
     /// </summary>
     /// <param name="TablesToClean">VAR Record TablesToClean_ANJ.</param>
-    /// <param name="ApplyTableFilters">Boolean.</param>
     /// <param name="IsHandled">Boolean.</param>
-    local procedure DoCalculate(var TablesToClean: Record TablesToClean_ANJ; ApplyTableFilters: Boolean; IsHandled: Boolean);
+    local procedure DoCalculate(var TablesToClean: Record TablesToClean_ANJ; IsHandled: Boolean);
     var
         AuxRecordRef: RecordRef;
+        FiltersToApply: Dictionary of [Integer, Text[2048]];
     begin
         if IsHandled then
             exit;
@@ -36,13 +35,13 @@ codeunit 80706 TotalRecordCalculator_ANJ
             exit;
 
         AuxRecordRef.Open(TablesToClean.TableNo);
-        if ApplyTableFilters then
-            FilterApplicator.ApplyFilter(TablesToClean.MedicalTests, TablesToClean.TableNo, AuxRecordRef);
+        FillDictFromTableFilters.FillDictionary(TablesToClean.MedicalTests, TablesToClean.TableNo, FiltersToApply);
+        FilterApplicator.ApplyFilter(FiltersToApply, AuxRecordRef);
         TablesToClean.Validate(TotalOfRecords, AuxRecordRef.Count());
     end;
 
     [IntegrationEvent(false, false)]
-    local procedure OnBeforeCalculate(var TablesToClean: Record TablesToClean_ANJ; var ApplyTableFilters: Boolean; var IsHandled: Boolean);
+    local procedure OnBeforeCalculate(var TablesToClean: Record TablesToClean_ANJ; var IsHandled: Boolean);
     begin
     end;
 
@@ -52,5 +51,6 @@ codeunit 80706 TotalRecordCalculator_ANJ
     end;
 
     var
+        FillDictFromTableFilters: Codeunit FillDictFromTableFilters_ANJ;
         FilterApplicator: Codeunit FilterApplicator_ANJ;
 }

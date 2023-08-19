@@ -40,7 +40,7 @@ table 80704 TableFilters_ANJ
             Editable = false;
             FieldClass = FlowField;
         }
-        field(6; FilterValue; Text[150])
+        field(6; FilterValue; Text[2048])
         {
             Caption = 'Value';
         }
