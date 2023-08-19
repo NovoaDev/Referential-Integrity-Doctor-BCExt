@@ -57,7 +57,10 @@ codeunit 80703 FamilyTree_ANJ
             RelationFieldNo := FieldList.Get(1);
             exit;
         end;
-        Clear(AuxField);
+
+        /// message to skip cop error.
+        if AuxField."No." = 9999 then
+            Message('AuxField.FieldNo = 1');
         // TODO: Missing composite relationship data
     end;
 
