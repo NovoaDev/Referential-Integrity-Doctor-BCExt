@@ -1,5 +1,5 @@
 /// <summary>
-/// Enum "EnumFieldType_ANJ" (ID 80702).
+/// Enum EnumFieldType_ANJ (ID 80702).
 /// </summary>
 enum 80702 EnumFieldType_ANJ
 {

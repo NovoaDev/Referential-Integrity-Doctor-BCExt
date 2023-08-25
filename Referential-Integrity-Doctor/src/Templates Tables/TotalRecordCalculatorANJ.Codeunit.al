@@ -38,6 +38,7 @@ codeunit 80706 TotalRecordCalculator_ANJ
         FillDictFromTableFilters.FillDictionary(TablesToClean.MedicalTests, TablesToClean.TableNo, FiltersToApply);
         FilterApplicator.ApplyFilter(FiltersToApply, AuxRecordRef);
         TablesToClean.Validate(TotalOfRecords, AuxRecordRef.Count());
+        TablesToClean.Modify(true);
     end;
 
     [IntegrationEvent(false, false)]

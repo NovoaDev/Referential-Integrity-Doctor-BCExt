@@ -59,8 +59,8 @@ table 80704 TableFilters_ANJ
     }
     fieldgroups
     {
-        fieldgroup(DropDown; MedicalTests, TableNo) { }
-        fieldgroup(Brick; MedicalTests, TableNo) { }
+        fieldgroup(DropDown; MedicalTests, TableNo, FieldNo) { }
+        fieldgroup(Brick; MedicalTests, TableNo, FieldNo) { }
     }
     /// <summary>
     /// UpdateFileType.

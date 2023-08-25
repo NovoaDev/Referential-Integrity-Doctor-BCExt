@@ -21,6 +21,12 @@ page 80703 TablesToClean_ANJ
                 field(TableNo; Rec.TableNo)
                 {
                     ToolTip = 'Specifies the value of the Table No. field.';
+
+                    trigger OnValidate()
+                    begin
+                        CurrPage.SaveRecord();
+                        Rec.RecalculeLines();
+                    end;
                 }
                 field(TableName; Rec.TableName)
                 {
@@ -46,9 +52,9 @@ page 80703 TablesToClean_ANJ
             }
         }
     }
+
     trigger OnAfterGetCurrRecord()
     begin
-        Rec.UpdateTotals();
         Rec.CalcFields(TableFilters);
     end;
 }

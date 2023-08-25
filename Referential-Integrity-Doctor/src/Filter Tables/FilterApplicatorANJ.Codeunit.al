@@ -40,7 +40,7 @@ codeunit 80708 FilterApplicator_ANJ
     end;
 
     /// <summary>
-    /// GetFieldValueFromFilterFieldref.
+    /// ApplyFilterToRecordRef.
     /// </summary>
     /// <param name="AuxRecordRef">VAR RecordRef.</param>
     /// <param name="FieldNo">Integer.</param>

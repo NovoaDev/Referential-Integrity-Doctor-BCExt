@@ -24,7 +24,7 @@ table 80702 TablesToClean_ANJ
 
             trigger OnValidate()
             begin
-                Rec.CalcFields(TableName);
+                CalcFields(TableName);
             end;
         }
         field(3; TableName; Text[30])
@@ -121,8 +121,7 @@ table 80702 TablesToClean_ANJ
     begin
         UpdateTotals();
         CleanRelatedFields();
-        if (TableNo <> 0) and (Rec.TableNo <> xRec.TableNo) then
-            FillRelatedFieldsTable();
+        FillRelatedFieldsTable();
     end;
 
     /// <summary>

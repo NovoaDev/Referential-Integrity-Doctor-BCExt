@@ -35,7 +35,7 @@ table 80705 TableRelations_ANJ
 
             trigger OnValidate()
             begin
-                Rec.CalcFields(FieldName);
+                CalcFields(FieldName);
             end;
         }
         field(4; FieldName; Text[150])
@@ -63,7 +63,7 @@ table 80705 TableRelations_ANJ
 
             trigger OnValidate()
             begin
-                Rec.CalcFields(RelationFieldName);
+                CalcFields(RelationFieldName);
             end;
         }
         field(7; RelationFieldName; Text[150])

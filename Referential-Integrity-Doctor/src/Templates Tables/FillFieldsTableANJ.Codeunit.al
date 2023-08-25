@@ -148,18 +148,6 @@ codeunit 80700 FillFieldsTable_ANJ
     begin
     end;
 
-    [EventSubscriber(ObjectType::Table, Database::TablesToClean_ANJ, OnAfterInsertEvent, '', false, false)]
-    local procedure OnAfterInsertEventTablesToClean(var Rec: Record TablesToClean_ANJ; RunTrigger: Boolean)
-    begin
-        Rec.RecalculeLines();
-    end;
-
-    [EventSubscriber(ObjectType::Table, Database::TablesToClean_ANJ, OnAfterModifyEvent, '', false, false)]
-    local procedure OnAfterModifyEventTablesToClean(var Rec: Record TablesToClean_ANJ; RunTrigger: Boolean)
-    begin
-        Rec.RecalculeLines();
-    end;
-
     var
         FamilyTree: Codeunit FamilyTree_ANJ;
         FieldLbl: Label 'Field:';

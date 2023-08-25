@@ -35,7 +35,7 @@ table 80703 FieldsToAnalyze_ANJ
 
             trigger OnValidate()
             begin
-                Rec.CalcFields(FieldName);
+                CalcFields(FieldName);
             end;
         }
         field(4; FieldName; Text[30])
@@ -54,7 +54,7 @@ table 80703 FieldsToAnalyze_ANJ
             begin
                 Clear(RelationFieldNo);
                 Validate(RelationFieldNo);
-                Rec.CalcFields(RelationTableName);
+                CalcFields(RelationTableName);
             end;
         }
         field(6; RelationTableName; Text[30])
@@ -71,7 +71,7 @@ table 80703 FieldsToAnalyze_ANJ
 
             trigger OnValidate()
             begin
-                Rec.CalcFields(RelationFieldName);
+                CalcFields(RelationFieldName);
             end;
         }
         field(8; RelationFieldName; Text[30])
