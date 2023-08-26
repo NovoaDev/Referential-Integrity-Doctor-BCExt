@@ -8,6 +8,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Diagnostic_ANJ - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 506739263 - Field 797787149 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Diagnostic Status</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Diagnostic_ANJ - Field DiagnosticStatus - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 506739263 - Field 1016130111 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Entry No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -343,6 +348,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Diagnostic_ANJ - Control Index - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="Page 506739263 - Control 2929916843 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Index field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Diagnostic_ANJ - Control Indicator - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 506739263 - Control 2929916843 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Status</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Diagnostic_ANJ - Control Indicator - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 506739263 - Control 477445077 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Record Guid field.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -672,6 +687,26 @@
           <source>Diagnostic</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page TheRIDoctor_ANJ - Action Diagnostic - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3297799691 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Diagnostic Status</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum DiagnosticStatus_ANJ - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3297799691 - EnumValue 2248886284 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Error</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum DiagnosticStatus_ANJ - EnumValue Error - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3297799691 - EnumValue 1411056726 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Fixed</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum DiagnosticStatus_ANJ - EnumValue FixedOk - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3297799691 - EnumValue 3955473374 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Warning</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum DiagnosticStatus_ANJ - EnumValue Warning - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 1766393789 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Field Type</source>

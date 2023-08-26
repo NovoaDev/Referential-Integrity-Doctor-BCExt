@@ -47,6 +47,10 @@ table 80706 Diagnostic_ANJ
         {
             Caption = 'Index';
         }
+        field(8; DiagnosticStatus; Enum DiagnosticStatus_ANJ)
+        {
+            Caption = 'Diagnostic Status';
+        }
     }
     keys
     {
