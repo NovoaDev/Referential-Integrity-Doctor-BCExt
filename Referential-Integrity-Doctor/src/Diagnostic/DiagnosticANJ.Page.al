@@ -38,7 +38,22 @@ page 80711 Diagnostic_ANJ
                 {
                     ToolTip = 'Specifies the value of the Index field.';
                 }
+                field(Indicator; Indicator)
+                {
+                    Caption = 'Status';
+                    Editable = false;
+                    ToolTip = 'Specifies the value of the Index field.';
+                }
             }
         }
     }
+
+    trigger OnAfterGetRecord()
+    begin
+        VisualIndicator.GetValue(Rec.DiagnosticStatus, Indicator);
+    end;
+
+    var
+        VisualIndicator: Codeunit VisualIndicator_ANJ;
+        Indicator: Text;
 }
