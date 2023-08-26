@@ -2,7 +2,6 @@ permissionset 80700 RIDoctor_ANJ
 {
     Access = Public;
     Assignable = true;
-
     Permissions = tabledata Diagnostic_ANJ = RIMD,
         tabledata FieldsToAnalyze_ANJ = RIMD,
         tabledata MedicalTests_ANJ = RIMD,
@@ -40,5 +39,7 @@ permissionset 80700 RIDoctor_ANJ
         page TableFilters_ANJ = X,
         page TableRelations_ANJ = X,
         page TablesToClean_ANJ = X,
-        page TheRIDoctor_ANJ = X;
+        page TheRIDoctor_ANJ = X,
+        codeunit DiagnosticCleaner_ANJ = X,
+        codeunit TheRIDoctor_ANJ = X;
 }

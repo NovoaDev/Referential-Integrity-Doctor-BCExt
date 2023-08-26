@@ -45,15 +45,18 @@ codeunit 80711 FillingOfPieGraphics_ANJ
     var
         Diagnostic: Record Diagnostic_ANJ;
         TablesToClean: Record TablesToClean_ANJ;
-        TotalInDiagnostic: Integer;
+        GoodRecords: Integer;
+        TroubledRecords: Integer;
     begin
         TablesToClean.SetRange(MedicalTests, MedicalTest);
         TablesToClean.CalcSums(TotalOfRecords);
-        TotalInDiagnostic := Diagnostic.Count();
+        GoodRecords := TablesToClean.TotalOfRecords;
+        TroubledRecords := Diagnostic.Count();
+
         TempBusinessChartBuffer.AddColumn(GoodLbl);
-        TempBusinessChartBuffer.SetValueByIndex(0, 0, TablesToClean.TotalOfRecords);
+        TempBusinessChartBuffer.SetValueByIndex(0, 0, GoodRecords);
         TempBusinessChartBuffer.AddColumn(TroubledLbl);
-        TempBusinessChartBuffer.SetValueByIndex(0, 1, TotalInDiagnostic);
+        TempBusinessChartBuffer.SetValueByIndex(0, 1, TroubledRecords);
     end;
 
     [IntegrationEvent(false, false)]

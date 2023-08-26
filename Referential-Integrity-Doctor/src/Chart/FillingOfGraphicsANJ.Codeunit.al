@@ -45,7 +45,9 @@ codeunit 80710 FillingOfGraphics_ANJ
     local procedure FillBufferValues(MedicalTest: Code[20]; var TempBusinessChartBuffer: Record "Business Chart Buffer" temporary)
     var
         TablesToClean: Record TablesToClean_ANJ;
+        GoodRecords: Integer;
         Iterator: Integer;
+        TroubledRecords: Integer;
     begin
         Clear(Iterator);
         TablesToClean.SetLoadFields(TableName, TotalOfRecords);
@@ -55,8 +57,10 @@ codeunit 80710 FillingOfGraphics_ANJ
         if TablesToClean.FindSet(false) then
             repeat
                 TempBusinessChartBuffer.AddColumn(TablesToClean.TableName);
-                TempBusinessChartBuffer.SetValueByIndex(0, Iterator, TablesToClean.TotalOfRecords);
-                TempBusinessChartBuffer.SetValueByIndex(1, Iterator, GetTroubledRecord(TablesToClean.TableNo));
+                GoodRecords := TablesToClean.TotalOfRecords;
+                TroubledRecords := GetTroubledRecord(TablesToClean.TableNo);
+                TempBusinessChartBuffer.SetValueByIndex(0, Iterator, GoodRecords);
+                TempBusinessChartBuffer.SetValueByIndex(1, Iterator, TroubledRecords);
                 Iterator += 1;
             until TablesToClean.Next() = 0;
     end;

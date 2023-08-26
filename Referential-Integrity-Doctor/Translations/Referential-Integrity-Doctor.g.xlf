@@ -318,6 +318,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit InfoTableGenerator_ANJ - NamedType EmptyTableIdErr</note>
         </trans-unit>
+        <trans-unit id="Codeunit 3960686259 - Method 3174895257 - NamedType 738762091" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Diagnosis performed correctly.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TheRIDoctor_ANJ - Method AcknowledgeDiagnostic - NamedType AcknowledgeMsg</note>
+        </trans-unit>
         <trans-unit id="Page 3156038235 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Diagnostic Chart By Table</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -657,6 +662,16 @@
           <source>Specifies the value of the MedicalTests field.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page TheRIDoctor_ANJ - Control MedicalTests - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3960686259 - Action 1856301905 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Executes the Diagnostic action.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TheRIDoctor_ANJ - Action Diagnostic - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3960686259 - Action 1856301905 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Diagnostic</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TheRIDoctor_ANJ - Action Diagnostic - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 1766393789 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Field Type</source>

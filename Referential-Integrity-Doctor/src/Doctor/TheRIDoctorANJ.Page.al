@@ -25,6 +25,7 @@ page 80700 TheRIDoctor_ANJ
 
                     trigger OnValidate()
                     begin
+                        DiagnosticCleaner.Clean();
                         UpdateFactBoxes();
                     end;
                 }
@@ -33,7 +34,7 @@ page 80700 TheRIDoctor_ANJ
                     ToolTip = 'Specifies the value of the Description field.';
                 }
             }
-            part(Diagnostic; Diagnostic_ANJ)
+            part(DiagnosticResults; Diagnostic_ANJ)
             {
             }
         }
@@ -46,6 +47,31 @@ page 80700 TheRIDoctor_ANJ
             part(DiagnosticChart_ANJ; DiagnosticChart_ANJ)
             {
                 UpdatePropagation = Both;
+            }
+        }
+    }
+    actions
+    {
+        area(Processing)
+        {
+            action(Diagnostic)
+            {
+                Caption = 'Diagnostic';
+                Image = ViewCheck;
+                ToolTip = 'Executes the Diagnostic action.';
+
+                trigger OnAction()
+                begin
+                    DiagnosticCleaner.Clean();
+                    TheRIDoctor.Diagnostic(Rec.MedicalTests, false);
+                    UpdateFactBoxes();
+                end;
+            }
+        }
+        area(Promoted)
+        {
+            actionref(DiagnosticRef; Diagnostic)
+            {
             }
         }
     }
@@ -66,4 +92,8 @@ page 80700 TheRIDoctor_ANJ
         CurrPage.DiagnosticChart_ANJ.Page.SetParameter(Rec.MedicalTests);
         CurrPage.DiagnosticChart_ANJ.Page.FillChart();
     end;
+
+    var
+        DiagnosticCleaner: Codeunit DiagnosticCleaner_ANJ;
+        TheRIDoctor: Codeunit TheRIDoctor_ANJ;
 }
