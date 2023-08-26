@@ -72,4 +72,16 @@ table 80706 Diagnostic_ANJ
         {
         }
     }
+
+    /// <summary>
+    /// SolveTheProblems.
+    /// </summary>
+    /// <returns>Return value of type Boolean.</returns>
+    internal procedure SolveTheProblems(): Boolean
+    var
+        Solution: Interface Solution_ANJ;
+    begin
+        Solution := SolutionType;
+        Solution.ApplySolution();
+    end;
 }

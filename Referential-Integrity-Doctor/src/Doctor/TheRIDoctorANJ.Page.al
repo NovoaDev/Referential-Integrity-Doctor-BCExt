@@ -67,10 +67,24 @@ page 80700 TheRIDoctor_ANJ
                     UpdateFactBoxes();
                 end;
             }
+            action(SolveTheProblem)
+            {
+                Caption = 'Solve The Problems';
+                Image = ServiceMan;
+                ToolTip = 'Executes the Solve The Problems action.';
+
+                trigger OnAction()
+                begin
+                    SolveTheProblems.Solve(false);
+                end;
+            }
         }
         area(Promoted)
         {
             actionref(DiagnosticRef; Diagnostic)
+            {
+            }
+            actionref(SolveTheProblemsRef; SolveTheProblem)
             {
             }
         }
@@ -95,5 +109,6 @@ page 80700 TheRIDoctor_ANJ
 
     var
         DiagnosticCleaner: Codeunit DiagnosticCleaner_ANJ;
+        SolveTheProblems: Codeunit SolveTheProblems_ANJ;
         TheRIDoctor: Codeunit TheRIDoctor_ANJ;
 }
