@@ -26,7 +26,6 @@ permissionset 80700 RIDoctor_ANJ
         codeunit InfoTableCleaner_ANJ = X,
         codeunit InfoTableGenerator_ANJ = X,
         codeunit PerRangeImplementation_ANJ = X,
-        codeunit ReviewerFieldIsPartOfPK_ANJ = X,
         codeunit TotalRecordCalculator_ANJ = X,
         page DiagnosticChart_ANJ = X,
         page DiagnosticPie_ANJ = X,
