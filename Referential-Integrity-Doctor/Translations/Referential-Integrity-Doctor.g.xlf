@@ -3,6 +3,46 @@
   <file datatype="xml" source-language="en-US" target-language="en-US" original="Referential-Integrity-Doctor">
     <body>
       <group id="body">
+        <trans-unit id="Table 506739263 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Diagnostic</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Diagnostic_ANJ - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 506739263 - Field 1016130111 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Diagnostic_ANJ - Field EntryNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 506739263 - Field 171145402 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Index</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Diagnostic_ANJ - Field Index - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 506739263 - Field 477445077 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Record Guid</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Diagnostic_ANJ - Field RecGuid - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 506739263 - Field 2938875320 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Related Record Guid</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Diagnostic_ANJ - Field RelatedRecGuid - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 506739263 - Field 3269660428 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Related Table No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Diagnostic_ANJ - Field RelatedTableNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 506739263 - Field 730832363 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Table Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Diagnostic_ANJ - Field TableName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 506739263 - Field 103915345 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Table No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Diagnostic_ANJ - Field TableNo - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 2668976440 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Fields To Analyze</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -53,6 +93,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table FieldsToAnalyze_ANJ - Field TableNo - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 2668976440 - Field 2162756020 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Table Relation</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table FieldsToAnalyze_ANJ - Field TableRelation - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 2668976440 - Field 1901247322 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Test Table Relation</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -77,6 +122,81 @@
           <source>No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table MedicalTests_ANJ - Field No - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1787550513 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Filters</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TableFilters_ANJ - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1787550513 - Field 2733226171 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TableFilters_ANJ - Field EnumFieldType - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1787550513 - Field 166597695 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TableFilters_ANJ - Field FieldName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1787550513 - Field 2547700717 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TableFilters_ANJ - Field FieldNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1787550513 - Field 782696917 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TableFilters_ANJ - Field FilterValue - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1787550513 - Field 1792652834 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Medical Tests</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TableFilters_ANJ - Field MedicalTests - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 1787550513 - Field 103915345 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Table No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TableFilters_ANJ - Field TableNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 932410659 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Table Relations</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TableRelations_ANJ - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 932410659 - Field 166597695 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TableRelations_ANJ - Field FieldName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 932410659 - Field 2547700717 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TableRelations_ANJ - Field FieldNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 932410659 - Field 1792652834 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Medical Tests</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TableRelations_ANJ - Field MedicalTests - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 932410659 - Field 2977513821 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Relation Field Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TableRelations_ANJ - Field RelationFieldName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 932410659 - Field 2168500159 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Relation Field No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TableRelations_ANJ - Field RelationFieldNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 932410659 - Field 3012270107 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Table No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TableRelations_ANJ - Field RelationTableNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 932410659 - Field 103915345 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Table No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TableRelations_ANJ - Field TableNo - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2525548147 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Tables To Clean</source>
@@ -103,6 +223,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table TablesToClean_ANJ - Field RelationshipsType - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 2525548147 - Field 3245524479 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Table Filters</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TablesToClean_ANJ - Field TableFilters - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 2525548147 - Field 730832363 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Table Name</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -112,6 +237,11 @@
           <source>Table No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table TablesToClean_ANJ - Field TableNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2525548147 - Field 2935416519 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Total Of Records</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TablesToClean_ANJ - Field TotalOfRecords - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 3960686259 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Referential Integrity Doctor</source>
@@ -133,6 +263,51 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table TheRIDoctor_ANJ - Field PrimaryKey - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Codeunit 3030265462 - NamedType 117816908" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field:%1</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit FamilyTree_ANJ - NamedType FieldLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 1291331134 - NamedType 117816908" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field:</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit FillFieldsTable_ANJ - NamedType FieldLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2549972939 - NamedType 202961339" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Good</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit FillingOfGraphics_ANJ - NamedType GoodLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2549972939 - NamedType 2816833912" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Record</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit FillingOfGraphics_ANJ - NamedType RecordsLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2549972939 - NamedType 3262951387" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Troubled</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit FillingOfGraphics_ANJ - NamedType TroubledLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3014778447 - NamedType 202961339" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Good</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit FillingOfPieGraphics_ANJ - NamedType GoodLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3014778447 - NamedType 672541161" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Record</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit FillingOfPieGraphics_ANJ - NamedType RecordLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3014778447 - NamedType 3193096050" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Status</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit FillingOfPieGraphics_ANJ - NamedType StatusLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3014778447 - NamedType 3262951387" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Troubled</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit FillingOfPieGraphics_ANJ - NamedType TroubledLbl</note>
+        </trans-unit>
         <trans-unit id="Codeunit 3170151595 - NamedType 750120336" size-unit="char" translate="yes" xml:space="preserve">
           <source>Previously generated data exists, if you continue, it will be deleted. Do you want to continue?</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -142,6 +317,56 @@
           <source>Empty table id fields.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit InfoTableGenerator_ANJ - NamedType EmptyTableIdErr</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3960686259 - Method 3174895257 - NamedType 738762091" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Diagnosis performed correctly.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit TheRIDoctor_ANJ - Method AcknowledgeDiagnostic - NamedType AcknowledgeMsg</note>
+        </trans-unit>
+        <trans-unit id="Page 3156038235 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Diagnostic Chart By Table</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DiagnosticChart_ANJ - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2886651219 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Global Diagnostic Chart</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page DiagnosticPie_ANJ - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 506739263 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Diagnostic</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Diagnostic_ANJ - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 506739263 - Control 171145402 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Index field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Diagnostic_ANJ - Control Index - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 506739263 - Control 477445077 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Record Guid field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Diagnostic_ANJ - Control RecGuid - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 506739263 - Control 2938875320 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Related Record Guid field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Diagnostic_ANJ - Control RelatedRecGuid - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 506739263 - Control 3269660428 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Related Table No. field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Diagnostic_ANJ - Control RelatedTableNo - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 506739263 - Control 730832363 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Table Name field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Diagnostic_ANJ - Control TableName - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 506739263 - Control 103915345 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Table No. field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Diagnostic_ANJ - Control TableNo - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 2668976440 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Fields To Analyze</source>
@@ -182,6 +407,11 @@
           <source>Specifies the value of the Relation Table No. field.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page FieldsToAnalyze_ANJ - Control RelationTableNo - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2668976440 - Control 2162756020 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Table Relation field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page FieldsToAnalyze_ANJ - Control TableRelation - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 2668976440 - Control 1901247322 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Test Table Relation field.</source>
@@ -318,6 +548,61 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page ShowTableList_ANJ - Control Name - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="Page 1787550513 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Filters</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TableFilters_ANJ - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1787550513 - Control 166597695 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Field Name field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TableFilters_ANJ - Control FieldName - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1787550513 - Control 2547700717 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Field No. field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TableFilters_ANJ - Control FieldNo - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1787550513 - Control 782696917 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Value field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TableFilters_ANJ - Control FilterValue - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 932410659 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Table Relations</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TableRelations_ANJ - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 932410659 - Control 166597695 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Field Name field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TableRelations_ANJ - Control FieldName - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 932410659 - Control 2547700717 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Field No. field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TableRelations_ANJ - Control FieldNo - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 932410659 - Control 2977513821 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Relation Field Name field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TableRelations_ANJ - Control RelationFieldName - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 932410659 - Control 2168500159 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Relation Field No. field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TableRelations_ANJ - Control RelationFieldNo - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 932410659 - Control 3012270107 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Table No. field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TableRelations_ANJ - Control RelationTableNo - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 932410659 - Control 103915345 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Table No. field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TableRelations_ANJ - Control TableNo - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Page 2525548147 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Tables To Clean</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -338,6 +623,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page TablesToClean_ANJ - Control RelationshipsType - Property ToolTip</note>
         </trans-unit>
+        <trans-unit id="Page 2525548147 - Control 3245524479 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Table Filters field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TablesToClean_ANJ - Control TableFilters - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Page 2525548147 - Control 730832363 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Table Name field.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -347,6 +637,11 @@
           <source>Specifies the value of the Table No. field.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page TablesToClean_ANJ - Control TableNo - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2525548147 - Control 2935416519 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Total Of Records field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TablesToClean_ANJ - Control TotalOfRecords - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 3960686259 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Referential Integrity Doctor</source>
@@ -367,6 +662,131 @@
           <source>Specifies the value of the MedicalTests field.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page TheRIDoctor_ANJ - Control MedicalTests - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3960686259 - Action 1856301905 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Executes the Diagnostic action.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TheRIDoctor_ANJ - Action Diagnostic - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3960686259 - Action 1856301905 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Diagnostic</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TheRIDoctor_ANJ - Action Diagnostic - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1766393789 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum EnumFieldType_ANJ - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1766393789 - EnumValue 669100998 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Big Integer</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum EnumFieldType_ANJ - EnumValue BigInteger - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1766393789 - EnumValue 886665521 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Binary</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum EnumFieldType_ANJ - EnumValue Binary - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1766393789 - EnumValue 623172309 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>BLOB</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum EnumFieldType_ANJ - EnumValue BLOB - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1766393789 - EnumValue 617522584 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Boolean</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum EnumFieldType_ANJ - EnumValue Boolean - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1766393789 - EnumValue 3004954119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum EnumFieldType_ANJ - EnumValue Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1766393789 - EnumValue 3192175264 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Date</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum EnumFieldType_ANJ - EnumValue Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1766393789 - EnumValue 489126886 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Date Formula</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum EnumFieldType_ANJ - EnumValue DateFormula - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1766393789 - EnumValue 2854863747 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Date Time</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum EnumFieldType_ANJ - EnumValue DateTime - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1766393789 - EnumValue 3350651205 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Decimal</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum EnumFieldType_ANJ - EnumValue Decimal - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1766393789 - EnumValue 1637095154 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Duration</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum EnumFieldType_ANJ - EnumValue Duration - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1766393789 - EnumValue 1365275863 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum EnumFieldType_ANJ - EnumValue Empty - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1766393789 - EnumValue 3391920785 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>GUID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum EnumFieldType_ANJ - EnumValue GUID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1766393789 - EnumValue 3883182266 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Integer</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum EnumFieldType_ANJ - EnumValue Integer - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1766393789 - EnumValue 3252935640 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Media</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum EnumFieldType_ANJ - EnumValue Media - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1766393789 - EnumValue 376825882 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Media Set</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum EnumFieldType_ANJ - EnumValue MediaSet - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1766393789 - EnumValue 3905083126 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Oem Code</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum EnumFieldType_ANJ - EnumValue OemCode - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1766393789 - EnumValue 3239426750 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Oem Text</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum EnumFieldType_ANJ - EnumValue OemText - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1766393789 - EnumValue 828292189 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Option</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum EnumFieldType_ANJ - EnumValue Option - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1766393789 - EnumValue 3768732020 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Record ID</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum EnumFieldType_ANJ - EnumValue RecordID - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1766393789 - EnumValue 1548211826 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Table Filter</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum EnumFieldType_ANJ - EnumValue TableFilter - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1766393789 - EnumValue 1821279055 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Text</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum EnumFieldType_ANJ - EnumValue Text - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1766393789 - EnumValue 1230148255 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Time</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum EnumFieldType_ANJ - EnumValue Time - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 3256881759 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Relationships Type</source>

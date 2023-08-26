@@ -21,6 +21,12 @@ page 80703 TablesToClean_ANJ
                 field(TableNo; Rec.TableNo)
                 {
                     ToolTip = 'Specifies the value of the Table No. field.';
+
+                    trigger OnValidate()
+                    begin
+                        CurrPage.SaveRecord();
+                        Rec.RecalculeLines();
+                    end;
                 }
                 field(TableName; Rec.TableName)
                 {
@@ -30,6 +36,15 @@ page 80703 TablesToClean_ANJ
                 {
                     ToolTip = 'Specifies the value of the Relationships Type field.';
                 }
+                field(TableFilters; Rec.TableFilters)
+                {
+                    ToolTip = 'Specifies the value of the Table Filters field.';
+                }
+                field(TotalOfRecords; Rec.TotalOfRecords)
+                {
+                    Editable = false;
+                    ToolTip = 'Specifies the value of the Total Of Records field.';
+                }
                 field(Analyze; Rec.Analyze)
                 {
                     ToolTip = 'Specifies the value of the Analyze field.';
@@ -37,4 +52,9 @@ page 80703 TablesToClean_ANJ
             }
         }
     }
+
+    trigger OnAfterGetCurrRecord()
+    begin
+        Rec.CalcFields(TableFilters);
+    end;
 }

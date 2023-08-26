@@ -38,6 +38,15 @@ table 80701 MedicalTests_ANJ
         }
     }
 
+    trigger OnDelete()
+    var
+        TablesToClean: Record TablesToClean_ANJ;
+    begin
+        TablesToClean.SetRange(MedicalTests, No);
+        if not TablesToClean.IsEmpty() then
+            TablesToClean.DeleteAll(true);
+    end;
+
     /// <summary>
     /// GenerateTablesByRange.
     /// </summary>
@@ -52,7 +61,7 @@ table 80701 MedicalTests_ANJ
         ITableRangeAllocator := TableRangeAllocator;
         ITableRangeAllocator.GetInfoToGenerateData(InitTableId, EndTableId, RemoveFromListTablesWithoutFieldsWithRelations);
 
-        InfoTableGenerator.Generate(Rec.No, InitTableId, EndTableId, false);
+        InfoTableGenerator.Generate(No, InitTableId, EndTableId, false);
         if RemoveFromListTablesWithoutFieldsWithRelations then
             InfoTableCleaner.CleanTablesWitoutRelations();
     end;

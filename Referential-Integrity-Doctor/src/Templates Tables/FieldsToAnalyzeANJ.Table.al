@@ -6,6 +6,8 @@ table 80703 FieldsToAnalyze_ANJ
     Access = Internal;
     Caption = 'Fields To Analyze';
     DataClassification = CustomerContent;
+    DrillDownPageId = FieldsToAnalyze_ANJ;
+    LookupPageId = FieldsToAnalyze_ANJ;
 
     fields
     {
@@ -13,12 +15,12 @@ table 80703 FieldsToAnalyze_ANJ
         {
             Caption = 'Medical Tests';
             NotBlank = true;
-            TableRelation = MedicalTests_ANJ.No;
+            TableRelation = TablesToClean_ANJ.MedicalTests;
         }
         field(2; TableNo; Integer)
         {
             Caption = 'Table No.';
-            Tablerelation = "Table Metadata".ID;
+            TableRelation = TablesToClean_ANJ.TableNo where(TableNo = field(TableNo));
 
             trigger OnValidate()
             begin
@@ -33,7 +35,7 @@ table 80703 FieldsToAnalyze_ANJ
 
             trigger OnValidate()
             begin
-                Rec.CalcFields(FieldName);
+                CalcFields(FieldName);
             end;
         }
         field(4; FieldName; Text[30])
@@ -46,13 +48,13 @@ table 80703 FieldsToAnalyze_ANJ
         field(5; RelationTableNo; Integer)
         {
             Caption = 'Relation Table No.';
-            Tablerelation = "Table Metadata".ID;
+            Tablerelation = "Table Metadata";
 
             trigger OnValidate()
             begin
                 Clear(RelationFieldNo);
                 Validate(RelationFieldNo);
-                Rec.CalcFields(RelationTableName);
+                CalcFields(RelationTableName);
             end;
         }
         field(6; RelationTableName; Text[30])
@@ -69,7 +71,7 @@ table 80703 FieldsToAnalyze_ANJ
 
             trigger OnValidate()
             begin
-                Rec.CalcFields(RelationFieldName);
+                CalcFields(RelationFieldName);
             end;
         }
         field(8; RelationFieldName; Text[30])
@@ -95,6 +97,13 @@ table 80703 FieldsToAnalyze_ANJ
         {
             CalcFormula = exist("Table Relations Metadata" where("Table ID" = field(TableNo), "Field No." = field(Fieldno), "Validate Table Relation" = const(true)));
             Caption = 'Validate Table Relation';
+            Editable = false;
+            FieldClass = FlowField;
+        }
+        field(12; TableRelation; Integer)
+        {
+            CalcFormula = count(TableRelations_ANJ where(MedicalTests = field(MedicalTests), TableNo = field(TableNo), FieldNo = field(FieldNo)));
+            Caption = 'Table Relation';
             Editable = false;
             FieldClass = FlowField;
         }

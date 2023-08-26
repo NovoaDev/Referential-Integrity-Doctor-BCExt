@@ -19,7 +19,7 @@ table 80700 TheRIDoctor_ANJ
         field(2; MedicalTests; Code[20])
         {
             Caption = 'Medical Tests';
-            TableRelation = MedicalTests_ANJ.No;
+            TableRelation = MedicalTests_ANJ;
 
             trigger OnValidate()
             begin
