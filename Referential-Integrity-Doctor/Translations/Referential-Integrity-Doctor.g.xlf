@@ -328,6 +328,21 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit InfoTableGenerator_ANJ - NamedType EmptyTableIdErr</note>
         </trans-unit>
+        <trans-unit id="Codeunit 3625759828 - NamedType 738762091" size-unit="char" translate="yes" xml:space="preserve">
+          <source>%1 problems have been solved successfully.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit SolveTheProblems_ANJ - NamedType AcknowledgeMsg</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3625759828 - NamedType 750120336" size-unit="char" translate="yes" xml:space="preserve">
+          <source>It is very important that you are sure of what you are doing, a wrong decision can create inconsistencies in the database. Do you want to continue?</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit SolveTheProblems_ANJ - NamedType ConfirmQst</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3625759828 - NamedType 760648321" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No diagnostic lines have been found with warning status and with any pending solution to be executed.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit SolveTheProblems_ANJ - NamedType DiagnosticLinesErr</note>
+        </trans-unit>
         <trans-unit id="Codeunit 3960686259 - Method 3174895257 - NamedType 738762091" size-unit="char" translate="yes" xml:space="preserve">
           <source>Diagnosis performed correctly.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -697,6 +712,16 @@
           <source>Diagnostic</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page TheRIDoctor_ANJ - Action Diagnostic - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3960686259 - Action 4121509563 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Executes the Solve The Problems action.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TheRIDoctor_ANJ - Action SolveTheProblem - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3960686259 - Action 4121509563 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Solve The Problems</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TheRIDoctor_ANJ - Action SolveTheProblem - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 3297799691 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Diagnostic Status</source>
