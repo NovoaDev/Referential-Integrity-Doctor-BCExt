@@ -273,6 +273,41 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit FillFieldsTable_ANJ - NamedType FieldLbl</note>
         </trans-unit>
+        <trans-unit id="Codeunit 2549972939 - NamedType 202961339" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Good</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit FillingOfGraphics_ANJ - NamedType GoodLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2549972939 - NamedType 2816833912" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Record</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit FillingOfGraphics_ANJ - NamedType RecordsLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2549972939 - NamedType 3262951387" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Troubled</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit FillingOfGraphics_ANJ - NamedType TroubledLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3014778447 - NamedType 202961339" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Good</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit FillingOfPieGraphics_ANJ - NamedType GoodLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3014778447 - NamedType 672541161" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Record</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit FillingOfPieGraphics_ANJ - NamedType RecordLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3014778447 - NamedType 3193096050" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Status</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit FillingOfPieGraphics_ANJ - NamedType StatusLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3014778447 - NamedType 3262951387" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Troubled</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit FillingOfPieGraphics_ANJ - NamedType TroubledLbl</note>
+        </trans-unit>
         <trans-unit id="Codeunit 3170151595 - NamedType 750120336" size-unit="char" translate="yes" xml:space="preserve">
           <source>Previously generated data exists, if you continue, it will be deleted. Do you want to continue?</source>
           <note from="Developer" annotates="general" priority="2"></note>

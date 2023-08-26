@@ -39,11 +39,11 @@ page 80700 TheRIDoctor_ANJ
         }
         area(FactBoxes)
         {
-            part(DiagnosticChart_ANJ; DiagnosticChart_ANJ)
+            part(DiagnosticPie_ANJ; DiagnosticPie_ANJ)
             {
                 UpdatePropagation = Both;
             }
-            part(DiagnosticPie_ANJ; DiagnosticPie_ANJ)
+            part(DiagnosticChart_ANJ; DiagnosticChart_ANJ)
             {
                 UpdatePropagation = Both;
             }
@@ -60,10 +60,10 @@ page 80700 TheRIDoctor_ANJ
     /// </summary>
     local procedure UpdateFactBoxes()
     begin
-        CurrPage.DiagnosticChart_ANJ.Page.SetParameter(Rec.MedicalTests);
-        CurrPage.DiagnosticChart_ANJ.Page.FillChart();
-
         CurrPage.DiagnosticPie_ANJ.Page.SetParameter(Rec.MedicalTests);
         CurrPage.DiagnosticPie_ANJ.Page.FillChart();
+
+        CurrPage.DiagnosticChart_ANJ.Page.SetParameter(Rec.MedicalTests);
+        CurrPage.DiagnosticChart_ANJ.Page.FillChart();
     end;
 }
