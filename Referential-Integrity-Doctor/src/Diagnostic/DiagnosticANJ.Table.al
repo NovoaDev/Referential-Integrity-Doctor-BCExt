@@ -51,6 +51,10 @@ table 80706 Diagnostic_ANJ
         {
             Caption = 'Diagnostic Status';
         }
+        field(9; SolutionType; Enum SolutionType_ANJ)
+        {
+            Caption = 'Solution Type';
+        }
     }
     keys
     {

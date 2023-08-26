@@ -38,6 +38,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Diagnostic_ANJ - Field RelatedTableNo - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 506739263 - Field 1241361291 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Solution Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Diagnostic_ANJ - Field SolutionType - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 506739263 - Field 730832363 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Table Name</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -372,6 +377,11 @@
           <source>Specifies the value of the Related Table No. field.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Diagnostic_ANJ - Control RelatedTableNo - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 506739263 - Control 1241361291 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Solution Type field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Diagnostic_ANJ - Control SolutionType - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 506739263 - Control 730832363 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Table Name field.</source>
@@ -832,6 +842,31 @@
           <source>Foreign Keys</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum RelationshipsType_ANJ - EnumValue ForeignKeys - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2553257261 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Solution</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum SolutionType_ANJ - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2553257261 - EnumValue 1371923692 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source> </source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum SolutionType_ANJ - EnumValue   - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2553257261 - EnumValue 3446056250 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Do Nothing</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum SolutionType_ANJ - EnumValue DoNothing - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2553257261 - EnumValue 2041189267 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Generate Missing Records</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum SolutionType_ANJ - EnumValue GenerateMissingRecords - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 2553257261 - EnumValue 1308337688 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Update Orphaned Records</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum SolutionType_ANJ - EnumValue UpdateOrphanedRecords - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 3224741698 - EnumValue 3362790492 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Per Range</source>
