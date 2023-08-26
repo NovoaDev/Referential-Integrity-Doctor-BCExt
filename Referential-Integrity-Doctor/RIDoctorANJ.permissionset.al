@@ -41,5 +41,10 @@ permissionset 80700 RIDoctor_ANJ
         page TablesToClean_ANJ = X,
         page TheRIDoctor_ANJ = X,
         codeunit DiagnosticCleaner_ANJ = X,
-        codeunit TheRIDoctor_ANJ = X;
+        codeunit TheRIDoctor_ANJ = X,
+        codeunit DefaultSolutionIMP_ANJ = X,
+        codeunit DoNothingSolutionIMP_ANJ = X,
+        codeunit GenerateMissingRecordsIMP_ANJ = X,
+        codeunit UpdateOrphanedSolutionIMP_ANJ = X,
+        codeunit VisualIndicator_ANJ = X;
 }

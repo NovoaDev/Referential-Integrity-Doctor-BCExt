@@ -38,6 +38,10 @@ page 80711 Diagnostic_ANJ
                 {
                     ToolTip = 'Specifies the value of the Index field.';
                 }
+                field(SolutionType; Rec.SolutionType)
+                {
+                    ToolTip = 'Specifies the value of the Solution Type field.';
+                }
                 field(Indicator; Indicator)
                 {
                     Caption = 'Status';
