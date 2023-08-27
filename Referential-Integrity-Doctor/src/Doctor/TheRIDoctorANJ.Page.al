@@ -40,6 +40,10 @@ page 80700 TheRIDoctor_ANJ
         }
         area(FactBoxes)
         {
+            part(FactBoxStatusPicture_ANJ; FactBoxStatusPicture_ANJ)
+            {
+                SubPageLink = PrimaryKey = field(PrimaryKey);
+            }
             part(DiagnosticPie_ANJ; DiagnosticPie_ANJ)
             {
                 UpdatePropagation = Both;

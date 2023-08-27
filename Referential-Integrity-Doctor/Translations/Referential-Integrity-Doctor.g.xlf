@@ -263,6 +263,21 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table TheRIDoctor_ANJ - Field Description - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 3960686259 - Field 797787149 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Diagnostic Status</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TheRIDoctor_ANJ - Field DiagnosticStatus - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3960686259 - Field 426555523 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>FactBox Picture</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TheRIDoctor_ANJ - Field FactBoxPicture - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3960686259 - Field 1983977972 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>FactBox Text</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TheRIDoctor_ANJ - Field FactBoxText - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 3960686259 - Field 1792652834 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Medical Tests</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -272,6 +287,11 @@
           <source>Primary Key</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table TheRIDoctor_ANJ - Field PrimaryKey - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3025213302 - Method 1291838610 - NamedType 1412270478" size-unit="char" translate="yes" xml:space="preserve">
+          <source>With Errors</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit ErrorStatusIMP_ANJ - Method GetFactBoxText - NamedType FactboxTextLbl</note>
         </trans-unit>
         <trans-unit id="Codeunit 3030265462 - NamedType 117816908" size-unit="char" translate="yes" xml:space="preserve">
           <source>Field:%1</source>
@@ -328,6 +348,16 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit InfoTableGenerator_ANJ - NamedType EmptyTableIdErr</note>
         </trans-unit>
+        <trans-unit id="Codeunit 4149711981 - Method 1291838610 - NamedType 1412270478" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Without Diagnosis</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit NOStatusIMP_ANJ - Method GetFactBoxText - NamedType FactboxTextLbl</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 2245735906 - Method 1291838610 - NamedType 1412270478" size-unit="char" translate="yes" xml:space="preserve">
+          <source>All Ok</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit OKStatusIMP_ANJ - Method GetFactBoxText - NamedType FactboxTextLbl</note>
+        </trans-unit>
         <trans-unit id="Codeunit 3625759828 - NamedType 738762091" size-unit="char" translate="yes" xml:space="preserve">
           <source>%1 problems have been solved successfully.</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -347,6 +377,11 @@
           <source>Diagnosis performed correctly.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit TheRIDoctor_ANJ - Method AcknowledgeDiagnostic - NamedType AcknowledgeMsg</note>
+        </trans-unit>
+        <trans-unit id="Codeunit 3270665588 - Method 1291838610 - NamedType 1412270478" size-unit="char" translate="yes" xml:space="preserve">
+          <source>With Warnings</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Codeunit WarningStatusIMP_ANJ - Method GetFactBoxText - NamedType FactboxTextLbl</note>
         </trans-unit>
         <trans-unit id="Page 3156038235 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Diagnostic Chart By Table</source>
@@ -407,6 +442,26 @@
           <source>Specifies the value of the Table No. field.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Diagnostic_ANJ - Control TableNo - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2388101769 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Status Picture</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page FactBoxStatusPicture_ANJ - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2388101769 - Control 1983977972 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Diagnostic: field.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page FactBoxStatusPicture_ANJ - Control FactBoxText - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 2388101769 - Control 1983977972 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Diagnostic:</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page FactBoxStatusPicture_ANJ - Control FactBoxText - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2388101769 - Control 426555523 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Status Picture</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page FactBoxStatusPicture_ANJ - Control FactBoxPicture - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 2668976440 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Fields To Analyze</source>
@@ -737,6 +792,11 @@
           <source>Fixed</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum DiagnosticStatus_ANJ - EnumValue FixedOk - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3297799691 - EnumValue 3371220206 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>None</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum DiagnosticStatus_ANJ - EnumValue None - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 3297799691 - EnumValue 3955473374 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Warning</source>
