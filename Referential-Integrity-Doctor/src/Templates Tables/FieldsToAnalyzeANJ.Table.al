@@ -124,4 +124,14 @@ table 80703 FieldsToAnalyze_ANJ
         {
         }
     }
+    trigger OnDelete()
+    var
+        TableRelations: Record TableRelations_ANJ;
+    begin
+        TableRelations.SetRange(MedicalTests, MedicalTests);
+        TableRelations.SetRange(TableNo, TableNo);
+        TableRelations.SetRange(FieldNo, FieldNo);
+        if not TableRelations.IsEmpty() then
+            TableRelations.DeleteAll(true);
+    end;
 }
