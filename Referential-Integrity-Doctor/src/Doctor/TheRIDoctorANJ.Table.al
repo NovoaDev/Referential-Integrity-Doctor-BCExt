@@ -33,6 +33,24 @@ table 80700 TheRIDoctor_ANJ
             Editable = false;
             FieldClass = FlowField;
         }
+        field(4; DiagnosticStatus; Enum DiagnosticStatus_ANJ)
+        {
+            Caption = 'Diagnostic Status';
+            InitValue = "None";
+
+            trigger OnValidate()
+            begin
+                UpdateFactBox();
+            end;
+        }
+        field(5; FactBoxPicture; Media)
+        {
+            Caption = 'FactBox Picture';
+        }
+        field(6; FactBoxText; Text[250])
+        {
+            Caption = 'FactBox Text';
+        }
     }
     keys
     {
@@ -66,6 +84,23 @@ table 80700 TheRIDoctor_ANJ
         HasBeenRead := true;
     end;
 
+    /// <summary>
+    /// UpdateFactBox.
+    /// </summary>
+    local procedure UpdateFactBox()
     var
+        FactBoxImgLoader: Codeunit FactBoxImgLoader_ANJ;
+        FactBoxTextLoader: Codeunit FactBoxTextLoader_ANJ;
+        UpdateRIDocFactBoxPicture: Codeunit UpdateRIDocFactBox_ANJ;
+        FactBoxPictureBase64: Text;
+        AuxFactBoxText: Text[250];
+    begin
+        FactBoxImgLoader.GetValue(DiagnosticStatus, FactBoxPictureBase64);
+        FactBoxTextLoader.GetText(DiagnosticStatus, AuxFactBoxText);
+        UpdateRIDocFactBoxPicture.Update(Rec, AuxFactBoxText, FactBoxPictureBase64);
+    end;
+
+    var
+
         HasBeenRead: Boolean;
 }

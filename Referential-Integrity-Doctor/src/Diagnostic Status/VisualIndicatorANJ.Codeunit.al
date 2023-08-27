@@ -28,18 +28,14 @@ codeunit 80714 VisualIndicator_ANJ
     /// <param name="Indicator">VAR Text.</param>
     /// <param name="IsHandled">VAR Boolean.</param>
     local procedure DoGetValue(var DiagnosticStatus: Enum DiagnosticStatus_ANJ; var Indicator: Text; IsHandled: Boolean);
+    var
+        IDiagnosticStatus: Interface DiagnosticStatus_ANJ;
     begin
         if IsHandled then
             exit;
 
-        case DiagnosticStatus of
-            DiagnosticStatus::Warning:
-                Indicator := '⚠️';
-            DiagnosticStatus::Error:
-                Indicator := '❌';
-            DiagnosticStatus::FixedOk:
-                Indicator := '✅'
-        end;
+        IDiagnosticStatus := DiagnosticStatus;
+        IDiagnosticStatus.GetIndicatorValue(Indicator);
     end;
 
     [IntegrationEvent(false, false)]
