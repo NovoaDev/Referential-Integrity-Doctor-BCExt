@@ -6,9 +6,7 @@ page 80708 TableRelations_ANJ
     ApplicationArea = All;
     Caption = 'Table Relations';
     DeleteAllowed = false;
-    Editable = false;
     InsertAllowed = false;
-    ModifyAllowed = false;
     PageType = List;
     SourceTable = TableRelations_ANJ;
     UsageCategory = None;
@@ -19,31 +17,54 @@ page 80708 TableRelations_ANJ
         {
             repeater(General)
             {
-                field(TableNo; Rec.TableNo)
-                {
-                    ToolTip = 'Specifies the value of the Table No. field.';
-                }
-                field(FieldNo; Rec.FieldNo)
-                {
-                    ToolTip = 'Specifies the value of the Field No. field.';
-                }
-                field(FieldName; Rec.FieldName)
-                {
-                    ToolTip = 'Specifies the value of the Field Name field.';
-                }
                 field(RelationTableNo; Rec.RelationTableNo)
                 {
+                    Editable = false;
                     ToolTip = 'Specifies the value of the Table No. field.';
                 }
                 field(RelationFieldNo; Rec.RelationFieldNo)
                 {
-                    ToolTip = 'Specifies the value of the Relation Field No. field.';
+                    Editable = false;
+                    ToolTip = 'Specifies the value of the Table No. field.';
                 }
                 field(RelationFieldName; Rec.RelationFieldName)
                 {
                     ToolTip = 'Specifies the value of the Relation Field Name field.';
                 }
+                field(FieldsType; Rec.FieldsType)
+                {
+                    ToolTip = 'Specifies the value of the FieldsType field.';
+                }
+                field(FilterValue; FilterValue)
+                {
+                    AssistEdit = true;
+                    Caption = 'Filter Value';
+                    ToolTip = 'Specifies the value of the Relation Filter Value field.';
+
+                    trigger OnValidate()
+                    begin
+                        Rec.SetFilterValue(FilterValue);
+                    end;
+
+                    trigger OnAssistEdit()
+                    begin
+                        Rec.OnAssistEditField(FilterValue);
+                        Rec.SetFilterValue(FilterValue);
+                    end;
+                }
+                field(SourceFieldName; Rec.SourceFieldName)
+                {
+                    ToolTip = 'Specifies the value of the Source Field Name field.';
+                }
             }
         }
     }
+
+    trigger OnAfterGetRecord()
+    begin
+        Rec.GetFilterValue(FilterValue);
+    end;
+
+    var
+        FilterValue: Text[2048];
 }

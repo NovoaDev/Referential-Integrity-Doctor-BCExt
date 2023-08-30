@@ -18,7 +18,7 @@ codeunit 80724 NOStatusIMP_ANJ implements DiagnosticStatus_ANJ
     /// GetFactBoxText.
     /// </summary>
     /// <param name="FactBoxText">VAR Text.</param>
-    internal procedure GetFactBoxText(var FactBoxText: Text);
+    internal procedure GetFactBoxText(var FactBoxText: Text[250]);
     var
         FactboxTextLbl: Label 'Without Diagnosis';
     begin

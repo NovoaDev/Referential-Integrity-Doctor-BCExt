@@ -15,7 +15,7 @@ interface DiagnosticStatus_ANJ
     /// GetFactBoxText.
     /// </summary>
     /// <param name="FactBoxText">VAR Text.</param>
-    procedure GetFactBoxText(var FactBoxText: Text)
+    procedure GetFactBoxText(var FactBoxText: Text[250])
 
     /// <summary>
     /// GetPictureBase64.

@@ -1,9 +1,9 @@
 /// <summary>
-/// Enum EnumFieldType_ANJ (ID 80702).
+/// Enum FieldFormat_ANJ (ID 80702).
 /// </summary>
-enum 80702 EnumFieldType_ANJ
+enum 80702 FieldFormat_ANJ
 {
-    Access = Internal;
+    Access = Public;
     Caption = 'Field Type';
     Extensible = false;
 
