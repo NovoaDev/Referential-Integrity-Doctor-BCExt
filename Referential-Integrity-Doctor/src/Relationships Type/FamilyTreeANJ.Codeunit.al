@@ -43,6 +43,7 @@ codeunit 80703 FamilyTree_ANJ
             if not FieldList.Contains(AuxFieldRefs.Number()) then
                 FieldList.Add(AuxFieldRefs.Number);
         end;
+        AuxRecordRef.Close();
     end;
 
     [IntegrationEvent(false, false)]

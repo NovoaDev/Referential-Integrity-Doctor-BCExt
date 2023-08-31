@@ -61,6 +61,7 @@ codeunit 80713 TheRIDoctor_ANJ
 
                     until FieldsToAnalyze.Next() = 0;
             until AuxRecordRef.Next() = 0;
+        AuxRecordRef.Close();
     end;
 
     /// <summary>
