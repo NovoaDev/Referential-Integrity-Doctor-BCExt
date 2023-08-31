@@ -138,10 +138,10 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table TableFilters_ANJ - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 1787550513 - Field 2733226171 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Field Type</source>
+        <trans-unit id="Table 1787550513 - Field 1919955299 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field Format</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table TableFilters_ANJ - Field EnumFieldType - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TableFilters_ANJ - Field FieldFormat - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 1787550513 - Field 166597695 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Field Name</source>
@@ -173,6 +173,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table TableRelations_ANJ - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 932410659 - Field 1919955299 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TableRelations_ANJ - Field FieldFormat - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 932410659 - Field 166597695 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Field Name</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -182,6 +187,16 @@
           <source>Field No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table TableRelations_ANJ - Field FieldNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 932410659 - Field 3901107163 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field Type</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TableRelations_ANJ - Field FieldsType - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 932410659 - Field 782696917 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Filter Value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TableRelations_ANJ - Field FilterValue - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 932410659 - Field 1792652834 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Medical Tests</source>
@@ -198,10 +213,25 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table TableRelations_ANJ - Field RelationFieldNo - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 932410659 - Field 1587026417 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Relation No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TableRelations_ANJ - Field RelationNo - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 932410659 - Field 3012270107 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Table No.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table TableRelations_ANJ - Field RelationTableNo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 932410659 - Field 2183632084 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Source Field Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TableRelations_ANJ - Field SourceFieldName - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 932410659 - Field 1629855146 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Source Field No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table TableRelations_ANJ - Field SourceFieldNo - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 932410659 - Field 103915345 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Table No.</source>
@@ -292,16 +322,6 @@
           <source>With Errors</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Codeunit ErrorStatusIMP_ANJ - Method GetFactBoxText - NamedType FactboxTextLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 3030265462 - NamedType 117816908" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Field:%1</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit FamilyTree_ANJ - NamedType FieldLbl</note>
-        </trans-unit>
-        <trans-unit id="Codeunit 1291331134 - NamedType 117816908" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Field:</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Codeunit FillFieldsTable_ANJ - NamedType FieldLbl</note>
         </trans-unit>
         <trans-unit id="Codeunit 2549972939 - NamedType 202961339" size-unit="char" translate="yes" xml:space="preserve">
           <source>Good</source>
@@ -628,6 +648,21 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page MedicalTest_ANJ - Action Category_Category4 - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 754724988 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Table fields</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ShowFields_ANJ - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 754724988 - Control 166597695 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field Name</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ShowFields_ANJ - Control FieldName - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 754724988 - Control 4200184881 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>No. Campo</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page ShowFields_ANJ - Control No. - Property ToolTip</note>
+        </trans-unit>
         <trans-unit id="Page 3060521775 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Tables</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -668,15 +703,20 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page TableRelations_ANJ - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Page 932410659 - Control 166597695 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Field Name field.</source>
+        <trans-unit id="Page 932410659 - Control 3901107163 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the FieldsType field.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page TableRelations_ANJ - Control FieldName - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TableRelations_ANJ - Control FieldsType - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 932410659 - Control 2547700717 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Field No. field.</source>
+        <trans-unit id="Page 932410659 - Control 782696917 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Relation Filter Value field.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page TableRelations_ANJ - Control FieldNo - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TableRelations_ANJ - Control FilterValue - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 932410659 - Control 782696917 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Filter Value</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TableRelations_ANJ - Control FilterValue - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 932410659 - Control 2977513821 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
           <source>Specifies the value of the Relation Field Name field.</source>
@@ -684,7 +724,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page TableRelations_ANJ - Control RelationFieldName - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 932410659 - Control 2168500159 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Relation Field No. field.</source>
+          <source>Specifies the value of the Table No. field.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page TableRelations_ANJ - Control RelationFieldNo - Property ToolTip</note>
         </trans-unit>
@@ -693,10 +733,10 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page TableRelations_ANJ - Control RelationTableNo - Property ToolTip</note>
         </trans-unit>
-        <trans-unit id="Page 932410659 - Control 103915345 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Specifies the value of the Table No. field.</source>
+        <trans-unit id="Page 932410659 - Control 2183632084 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Specifies the value of the Source Field Name field.</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Page TableRelations_ANJ - Control TableNo - Property ToolTip</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page TableRelations_ANJ - Control SourceFieldName - Property ToolTip</note>
         </trans-unit>
         <trans-unit id="Page 2525548147 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Tables To Clean</source>
@@ -803,120 +843,130 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum DiagnosticStatus_ANJ - EnumValue Warning - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Enum 1766393789 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Enum 1144749461 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Field Type</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum EnumFieldType_ANJ - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum FieldFormat_ANJ - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Enum 1766393789 - EnumValue 669100998 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Enum 1144749461 - EnumValue 669100998 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Big Integer</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum EnumFieldType_ANJ - EnumValue BigInteger - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum FieldFormat_ANJ - EnumValue BigInteger - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Enum 1766393789 - EnumValue 886665521 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Enum 1144749461 - EnumValue 886665521 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Binary</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum EnumFieldType_ANJ - EnumValue Binary - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum FieldFormat_ANJ - EnumValue Binary - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Enum 1766393789 - EnumValue 623172309 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Enum 1144749461 - EnumValue 623172309 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>BLOB</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum EnumFieldType_ANJ - EnumValue BLOB - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum FieldFormat_ANJ - EnumValue BLOB - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Enum 1766393789 - EnumValue 617522584 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Enum 1144749461 - EnumValue 617522584 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Boolean</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum EnumFieldType_ANJ - EnumValue Boolean - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum FieldFormat_ANJ - EnumValue Boolean - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Enum 1766393789 - EnumValue 3004954119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Enum 1144749461 - EnumValue 3004954119 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Code</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum EnumFieldType_ANJ - EnumValue Code - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum FieldFormat_ANJ - EnumValue Code - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Enum 1766393789 - EnumValue 3192175264 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Enum 1144749461 - EnumValue 3192175264 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Date</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum EnumFieldType_ANJ - EnumValue Date - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum FieldFormat_ANJ - EnumValue Date - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Enum 1766393789 - EnumValue 489126886 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Enum 1144749461 - EnumValue 489126886 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Date Formula</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum EnumFieldType_ANJ - EnumValue DateFormula - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum FieldFormat_ANJ - EnumValue DateFormula - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Enum 1766393789 - EnumValue 2854863747 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Enum 1144749461 - EnumValue 2854863747 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Date Time</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum EnumFieldType_ANJ - EnumValue DateTime - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum FieldFormat_ANJ - EnumValue DateTime - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Enum 1766393789 - EnumValue 3350651205 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Enum 1144749461 - EnumValue 3350651205 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Decimal</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum EnumFieldType_ANJ - EnumValue Decimal - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum FieldFormat_ANJ - EnumValue Decimal - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Enum 1766393789 - EnumValue 1637095154 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Enum 1144749461 - EnumValue 1637095154 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Duration</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum EnumFieldType_ANJ - EnumValue Duration - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum FieldFormat_ANJ - EnumValue Duration - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Enum 1766393789 - EnumValue 1365275863 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Enum 1144749461 - EnumValue 1365275863 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source> </source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum EnumFieldType_ANJ - EnumValue Empty - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum FieldFormat_ANJ - EnumValue Empty - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Enum 1766393789 - EnumValue 3391920785 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Enum 1144749461 - EnumValue 3391920785 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>GUID</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum EnumFieldType_ANJ - EnumValue GUID - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum FieldFormat_ANJ - EnumValue GUID - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Enum 1766393789 - EnumValue 3883182266 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Enum 1144749461 - EnumValue 3883182266 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Integer</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum EnumFieldType_ANJ - EnumValue Integer - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum FieldFormat_ANJ - EnumValue Integer - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Enum 1766393789 - EnumValue 3252935640 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Enum 1144749461 - EnumValue 3252935640 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Media</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum EnumFieldType_ANJ - EnumValue Media - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum FieldFormat_ANJ - EnumValue Media - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Enum 1766393789 - EnumValue 376825882 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Enum 1144749461 - EnumValue 376825882 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Media Set</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum EnumFieldType_ANJ - EnumValue MediaSet - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum FieldFormat_ANJ - EnumValue MediaSet - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Enum 1766393789 - EnumValue 3905083126 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Enum 1144749461 - EnumValue 3905083126 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Oem Code</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum EnumFieldType_ANJ - EnumValue OemCode - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum FieldFormat_ANJ - EnumValue OemCode - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Enum 1766393789 - EnumValue 3239426750 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Enum 1144749461 - EnumValue 3239426750 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Oem Text</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum EnumFieldType_ANJ - EnumValue OemText - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum FieldFormat_ANJ - EnumValue OemText - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Enum 1766393789 - EnumValue 828292189 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Enum 1144749461 - EnumValue 828292189 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Option</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum EnumFieldType_ANJ - EnumValue Option - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum FieldFormat_ANJ - EnumValue Option - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Enum 1766393789 - EnumValue 3768732020 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Enum 1144749461 - EnumValue 3768732020 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Record ID</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum EnumFieldType_ANJ - EnumValue RecordID - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum FieldFormat_ANJ - EnumValue RecordID - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Enum 1766393789 - EnumValue 1548211826 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Enum 1144749461 - EnumValue 1548211826 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Table Filter</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum EnumFieldType_ANJ - EnumValue TableFilter - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum FieldFormat_ANJ - EnumValue TableFilter - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Enum 1766393789 - EnumValue 1821279055 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Enum 1144749461 - EnumValue 1821279055 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Text</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum EnumFieldType_ANJ - EnumValue Text - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum FieldFormat_ANJ - EnumValue Text - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Enum 1766393789 - EnumValue 1230148255 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Enum 1144749461 - EnumValue 1230148255 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Time</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum EnumFieldType_ANJ - EnumValue Time - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum FieldFormat_ANJ - EnumValue Time - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1639628230 - EnumValue 809579490 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Constant</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum FilterType_ANJ - EnumValue Constant - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1639628230 - EnumValue 1884737638 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Field</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum FilterType_ANJ - EnumValue Field - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 3256881759 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Relationships Type</source>

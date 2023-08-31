@@ -10,7 +10,7 @@ codeunit 80725 FactBoxTextLoader_ANJ
     /// </summary>
     /// <param name="DiagnosticStatus">VAR Enum DiagnosticStatus_ANJ.</param>
     /// <param name="FactBoxText">Text.</param>
-    internal procedure GetText(var DiagnosticStatus: Enum DiagnosticStatus_ANJ; var FactBoxText: Text)
+    internal procedure GetText(var DiagnosticStatus: Enum DiagnosticStatus_ANJ; var FactBoxText: Text[250])
     var
         IsHandled: Boolean;
     begin
@@ -25,7 +25,7 @@ codeunit 80725 FactBoxTextLoader_ANJ
     /// <param name="DiagnosticStatus">VAR Enum DiagnosticStatus_ANJ.</param>
     /// <param name="FactBoxText">Text.</param>
     /// <param name="IsHandled">Boolean.</param>
-    local procedure DoGetText(var DiagnosticStatus: Enum DiagnosticStatus_ANJ; var FactBoxText: Text; IsHandled: Boolean);
+    local procedure DoGetText(var DiagnosticStatus: Enum DiagnosticStatus_ANJ; var FactBoxText: Text[250]; IsHandled: Boolean);
     var
         IDiagnosticStatus: Interface DiagnosticStatus_ANJ;
     begin
@@ -37,12 +37,12 @@ codeunit 80725 FactBoxTextLoader_ANJ
     end;
 
     [IntegrationEvent(false, false)]
-    local procedure OnBeforeGetText(var DiagnosticStatus: Enum DiagnosticStatus_ANJ; var FactBoxText: Text; var IsHandled: Boolean);
+    local procedure OnBeforeGetText(var DiagnosticStatus: Enum DiagnosticStatus_ANJ; var FactBoxText: Text[250]; var IsHandled: Boolean);
     begin
     end;
 
     [IntegrationEvent(false, false)]
-    local procedure OnAfterGetText(DiagnosticStatus: Enum DiagnosticStatus_ANJ; FactBoxText: Text);
+    local procedure OnAfterGetText(DiagnosticStatus: Enum DiagnosticStatus_ANJ; FactBoxText: Text[250]);
     begin
     end;
 }

@@ -44,9 +44,9 @@ table 80704 TableFilters_ANJ
         {
             Caption = 'Value';
         }
-        field(7; EnumFieldType; Enum EnumFieldType_ANJ)
+        field(7; FieldFormat; Enum FieldFormat_ANJ)
         {
-            Caption = 'Field Type';
+            Caption = 'Field Format';
             InitValue = Empty;
         }
     }
@@ -69,10 +69,10 @@ table 80704 TableFilters_ANJ
     var
         AuxField: Record Field;
     begin
-        Clear(EnumFieldType);
+        Clear(FieldFormat);
         if not AuxField.Get(TableNo, FieldNo) then
             exit;
 
-        EnumFieldType := Enum::EnumFieldType_ANJ.FromInteger(AuxField.Type);
+        FieldFormat := Enum::FieldFormat_ANJ.FromInteger(AuxField.Type);
     end;
 }

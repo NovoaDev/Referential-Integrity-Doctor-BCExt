@@ -2,6 +2,7 @@ permissionset 80700 RIDoctor_ANJ
 {
     Access = Public;
     Assignable = true;
+
     Permissions = tabledata Diagnostic_ANJ = RIMD,
         tabledata FieldsToAnalyze_ANJ = RIMD,
         tabledata MedicalTests_ANJ = RIMD,
@@ -16,6 +17,7 @@ permissionset 80700 RIDoctor_ANJ
         table TableRelations_ANJ = X,
         table TablesToClean_ANJ = X,
         table TheRIDoctor_ANJ = X,
+        codeunit ConstantFieldTypeIMP_ANJ = X,
         codeunit DefaultSolutionIMP_ANJ = X,
         codeunit DiagnosticCleaner_ANJ = X,
         codeunit DoNothingSolutionIMP_ANJ = X,
@@ -23,6 +25,7 @@ permissionset 80700 RIDoctor_ANJ
         codeunit FactBoxImgLoader_ANJ = X,
         codeunit FactBoxTextLoader_ANJ = X,
         codeunit FamilyTree_ANJ = X,
+        codeunit FieldFieldTypeIMP_ANJ = X,
         codeunit FillDictFromTableFilters_ANJ = X,
         codeunit FillFieldsTable_ANJ = X,
         codeunit FillingOfGraphics_ANJ = X,
@@ -50,6 +53,7 @@ permissionset 80700 RIDoctor_ANJ
         page FillIdByRange_ANJ = X,
         page MedicalTests_ANJ = X,
         page MedicalTest_ANJ = X,
+        page ShowFields_ANJ = X,
         page ShowTableList_ANJ = X,
         page TableFilters_ANJ = X,
         page TableRelations_ANJ = X,
