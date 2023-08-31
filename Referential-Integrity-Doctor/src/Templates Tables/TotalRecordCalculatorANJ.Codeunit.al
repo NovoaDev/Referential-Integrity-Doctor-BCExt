@@ -39,6 +39,7 @@ codeunit 80706 TotalRecordCalculator_ANJ
         FilterApplicator.ApplyFilter(FiltersToApply, AuxRecordRef);
         TablesToClean.Validate(TotalOfRecords, AuxRecordRef.Count());
         TablesToClean.Modify(true);
+        AuxRecordRef.Close();
     end;
 
     [IntegrationEvent(false, false)]

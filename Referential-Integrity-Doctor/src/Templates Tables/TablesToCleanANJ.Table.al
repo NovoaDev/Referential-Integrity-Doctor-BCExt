@@ -111,7 +111,7 @@ table 80702 TablesToClean_ANJ
     var
         FillFieldsTable: Codeunit FillFieldsTable_ANJ;
     begin
-        FillFieldsTable.GenerateData(MedicalTests, TableNo, RelationshipsType);
+        FillFieldsTable.GenerateData(MedicalTests, TableNo);
     end;
 
     /// <summary>

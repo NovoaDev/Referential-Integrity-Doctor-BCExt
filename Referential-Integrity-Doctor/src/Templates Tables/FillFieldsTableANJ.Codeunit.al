@@ -10,13 +10,12 @@ codeunit 80700 FillFieldsTable_ANJ
     /// </summary>
     /// <param name="MedicalTests">Code[20].</param>
     /// <param name="TableNo">Integer.</param>
-    /// <param name="RelationshipsType">Enum RelationshipsType_ANJ.</param>
-    internal procedure GenerateData(MedicalTests: Code[20]; TableNo: Integer; RelationshipsType: Enum RelationshipsType_ANJ)
+    internal procedure GenerateData(MedicalTests: Code[20]; TableNo: Integer)
     var
         IsHandled: Boolean;
     begin
         OnBeforeGenerateData(MedicalTests, TableNo, IsHandled);
-        DoGenerateData(MedicalTests, TableNo, RelationshipsType, IsHandled);
+        DoGenerateData(MedicalTests, TableNo, IsHandled);
         OnAfterGenerateData(MedicalTests, TableNo);
     end;
 
@@ -25,14 +24,8 @@ codeunit 80700 FillFieldsTable_ANJ
     /// </summary>
     /// <param name="MedicalTests">Code[20].</param>
     /// <param name="TableNo">Integer.</param>
-    /// <param name="RelationshipsType">Enum RelationshipsType_ANJ.</param>
     /// <param name="IsHandled">Boolean.</param>
-    local procedure DoGenerateData(MedicalTests: Code[20]; TableNo: Integer; RelationshipsType: Enum RelationshipsType_ANJ; IsHandled: Boolean);
-    var
-        AuxField: Record Field;
-        AuxRecordRef: RecordRef;
-        RelationTableNo: Integer;
-        RelatedKeyFieldList: List of [Integer];
+    local procedure DoGenerateData(MedicalTests: Code[20]; TableNo: Integer; IsHandled: Boolean);
     begin
         if IsHandled then
             exit;
@@ -40,20 +33,50 @@ codeunit 80700 FillFieldsTable_ANJ
         if (MedicalTests = '') or (TableNo = 0) then
             exit;
 
-        AuxRecordRef.Open(TableNo);
+        CheckAllFields(MedicalTests, TableNo);
+    end;
 
+    /// <summary>
+    /// CheckAllFields.
+    /// </summary>
+    /// <param name="MedicalTests">Code[20].</param>
+    /// <param name="TableNo">Integer.</param>
+    local procedure CheckAllFields(MedicalTests: Code[20]; TableNo: Integer)
+    var
+        AuxField: Record Field;
+        AuxRecordRef: RecordRef;
+        FieldNo: Integer;
+        RelationTableNo: Integer;
+    begin
+        AuxRecordRef.Open(TableNo);
         AuxField.SetLoadFields("No.");
         AuxField.SetRange(TableNo, TableNo);
+        AuxField.SetRange(ObsoleteState, AuxField.ObsoleteState::"No");
         AuxField.SetFilter("No.", '<%1', AuxField.FieldNo(SystemId)); // Exclude Control Fields
         if AuxField.FindSet(false) then
             repeat
-                RelationTableNo := AuxRecordRef.Field(AuxField."No.").Relation();
-                if RelationTableNo <> 0 then begin
-                    FamilyTree.GetRelationship(RelationTableNo, RelatedKeyFieldList);
-                    InsertFieldLine(MedicalTests, TableNo, AuxField."No.", RelationTableNo, RelatedKeyFieldList, RelationshipsType);
-                end;
+                FieldNo := AuxField."No.";
+                RelationTableNo := AuxRecordRef.Field(FieldNo).Relation();
+                if RelationTableNo <> 0 then
+                    CheckField(MedicalTests, TableNo, FieldNo, RelationTableNo);
             until AuxField.Next() = 0;
         AuxRecordRef.Close();
+    end;
+
+    /// <summary>
+    /// CheckField.
+    /// </summary>
+    /// <param name="MedicalTests">VAR Code[20].</param>
+    /// <param name="TableNo">VAR Integer.</param>
+    /// <param name="FieldNo">VAR Integer.</param>
+    /// <param name="RelationTableNo">VAR Integer.</param>
+    local procedure CheckField(MedicalTests: Code[20]; TableNo: Integer; FieldNo: Integer; RelationTableNo: Integer)
+    var
+        FamilyTree: Codeunit FamilyTree_ANJ;
+        RelatedKeyFieldList: List of [Integer];
+    begin
+        FamilyTree.GetRelationship(RelationTableNo, RelatedKeyFieldList);
+        InsertFieldLine(MedicalTests, TableNo, FieldNo, RelationTableNo, RelatedKeyFieldList);
     end;
 
     /// <summary>
@@ -64,8 +87,7 @@ codeunit 80700 FillFieldsTable_ANJ
     /// <param name="FieldNo">Integer.</param>
     /// <param name="RelationTableNo">Integer.</param>
     /// <param name="RelatedKeyFieldList">Text.</param>
-    /// <param name="RelationshipsType">Enum RelationshipsType_ANJ.</param>
-    local procedure InsertFieldLine(MedicalTests: Code[20]; TableNo: Integer; FieldNo: Integer; RelationTableNo: Integer; var RelatedKeyFieldList: List of [Integer]; RelationshipsType: Enum RelationshipsType_ANJ);
+    local procedure InsertFieldLine(MedicalTests: Code[20]; TableNo: Integer; FieldNo: Integer; RelationTableNo: Integer; var RelatedKeyFieldList: List of [Integer]);
     var
         FieldsToAnalyze: Record FieldsToAnalyze_ANJ;
         IsHandled: Boolean;
@@ -74,7 +96,6 @@ codeunit 80700 FillFieldsTable_ANJ
             exit;
 
         OnBeforeInsertFieldLine(MedicalTests, TableNo, FieldNo, RelationTableNo, RelatedKeyFieldList, IsHandled);
-        // TODO: Validar RelationshipsType si se skipea las relaciones
 
         FieldsToAnalyze.Init();
         FieldsToAnalyze.Validate(MedicalTests, MedicalTests);
@@ -82,7 +103,6 @@ codeunit 80700 FillFieldsTable_ANJ
         FieldsToAnalyze.Validate(FieldNo, FieldNo);
         FieldsToAnalyze.Insert(true);
         FieldsToAnalyze.Validate(RelationTableNo, RelationTableNo);
-        FillRelationFieldNo(FieldsToAnalyze, RelatedKeyFieldList);
         FieldsToAnalyze.Modify(true);
         OnAfterInsertFieldLine(MedicalTests, TableNo, FieldNo, RelationTableNo, RelatedKeyFieldList);
 
@@ -135,20 +155,6 @@ codeunit 80700 FillFieldsTable_ANJ
         TableRelations.Validate(FieldFormat, AuxField.Type);
     end;
 
-    /// <summary>
-    /// FillRelationFieldNo.
-    /// </summary>
-    /// <param name="FieldsToAnalyze">VAR Record FieldsToAnalyze_ANJ.</param>
-    /// <param name="RelatedKeyFieldList">VAR List of [Integer].</param>
-    local procedure FillRelationFieldNo(var FieldsToAnalyze: Record FieldsToAnalyze_ANJ; var RelatedKeyFieldList: List of [Integer])
-    begin
-        if RelatedKeyFieldList.Count() = 1 then begin
-            FieldsToAnalyze.Validate(RelationFieldNo, RelatedKeyFieldList.Get(1));
-            exit;
-        end;
-        //TODO: Si la clave tiene un solo campo con el mismo tipo de dato que mi campo original.
-    end;
-
     [IntegrationEvent(false, false)]
     local procedure OnBeforeInsertFieldLine(MedicalTests: Code[20]; TableNo: Integer; FieldNo: Integer; RelationTableNo: Integer; var RelatedKeyFieldList: List of [Integer]; var IsHandled: Boolean);
     begin
@@ -178,7 +184,4 @@ codeunit 80700 FillFieldsTable_ANJ
     local procedure OnAfterGenerateData(MedicalTests: Code[20]; TableNo: Integer);
     begin
     end;
-
-    var
-        FamilyTree: Codeunit FamilyTree_ANJ;
 }
