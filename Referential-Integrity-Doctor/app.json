@@ -2,7 +2,7 @@
   "id": "af89123d-590a-447b-b76f-d50bc1d4ed78",
   "name": "Referential-Integrity-Doctor",
   "publisher": "ANJ",
-  "version": "1.0.0.1",
+  "version": "1.1.0.0",
   "brief": "App to handle referential integrity problems",
   "description": "App to handle referential integrity problems",
   "privacyStatement": "https://github.com/NovoaDev/Referential-Integrity-Doctor-BCExt",
